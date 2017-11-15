@@ -1,9 +1,9 @@
 import xml.etree.cElementTree as ET
 
-OSM_FILE = "Chengdu.osm"
-SAMPLE_FILE = "sample.osm"
+OSM_FILE = "C:\\Users\\yijig\\Desktop\\Advanced course\\OpenStreetMap Project\\Chengdu.osm"
+SAMPLE_FILE = "C:\\Users\\yijig\\Desktop\\Advanced course\\sample.osm"
 
-k = 10 # take every k-th top level element
+k = 20 # take every k-th top level element
 def get_element(osm_file, tags=("node","way","relation")):
     """
     Yield element if it is the right tag

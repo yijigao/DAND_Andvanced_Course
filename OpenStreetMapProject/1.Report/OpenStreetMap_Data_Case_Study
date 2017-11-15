@@ -1,0 +1,8 @@
+# 1. 数据来源
+成都市, 四川省, 中华人民共和国 
+* https://www.openstreetmap.org/relation/2110264 
+* https://mapzen.com/data/metro-extracts/your-extracts/23b263c2550d 
+这是我目前所在的城市，我希望通过此次分析对这个城市有更深刻的了解：）
+# 2. 地图中发现的问题
+当我从地图数据中取出一个小样本进行小测试时，发现地图数据有如下问题：
+
