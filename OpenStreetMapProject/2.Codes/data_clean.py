@@ -5,13 +5,13 @@ import xml.etree.cElementTree as ET
 from collections import defaultdict
 
 
-OSM_PATH = "Chengdu.osm"
+OSM_PATH = "C:\\Users\\yijig\\Desktop\\Advanced course\\OpenStreetMap Project\\Chengdu.osm"
 
-NODES_PATH = "nodes.csv"
-NODE_TAGS_PATH = "nodes_tags.csv"
-WAYS_PATH = "ways.csv"
-WAY_NODES_PATH = "ways_nodes.csv"
-WAY_TAGS_PATH = "ways_tags.csv"
+NODES_PATH = "C:\\Users\\yijig\\Desktop\\Advanced course\\OpenStreetMap Project\\nodes.csv"
+NODE_TAGS_PATH = "C:\\Users\\yijig\\Desktop\\Advanced course\\OpenStreetMap Project\\nodes_tags.csv"
+WAYS_PATH = "C:\\Users\\yijig\\Desktop\\Advanced course\\OpenStreetMap Project\\ways.csv"
+WAY_NODES_PATH = "C:\\Users\\yijig\\Desktop\\Advanced course\\OpenStreetMap Project\\ways_nodes.csv"
+WAY_TAGS_PATH = "C:\\Users\\yijig\\Desktop\\Advanced course\\OpenStreetMap Project\\ways_tags.csv"
 
 LOWER_COLON = re.compile(r'^([a-z]|_)+:([a-z]|_)+')
 PROBLEMCHARS = re.compile(r'[=\+/&<>;\'"\?%#$@\,\. \t\r\n]')
@@ -77,6 +77,29 @@ def update_name(name, mapping):
         elif name.endswith(key):
             return name.replace(key, mapping[key])
 
+def update_postcode(postcode):
+    # 如果邮编是‘028’，将其转为成都市邮编‘610000’
+    if postcode.startswith('028'):
+        return '610000'
+    else:
+        return postcode
+
+def update_city(city_name):
+    # 如果city_name不是是‘成都市’，将其转为‘成都市’
+    if city_name != "成都市":
+        return '成都市'
+    else:
+        return city_name
+
+def update_housenumber(house_number):
+    """
+    如果是数字的话，那就在后面加上“号”
+    """
+    try:
+        if int(house_number):
+            return house_number + "号"
+    except ValueError:
+        return house_number
 
 def shape_tag(element,tag):
     tag = {
@@ -91,6 +114,16 @@ def shape_tag(element,tag):
         for street_types,ways in street_types.items():
             for name in ways:
                 tag["value"] = update_name(name, mapping)
+
+    if tag["key"] == "addr:postcode":
+        tag["value"] = update_postcode(tag["value"])
+
+    if tag["key"] == "addr:city":
+        tag["value"] = update_city(tag["value"])
+
+    if tag["key"] == "addr:housenumber":
+        tag["value"] = update_housenumber(tag["value"])
+
     if LOWER_COLON.match(tag["key"]):
         tag["type"], _, tag["key"] = tag["key"].partition(":")
 

@@ -1,7 +1,7 @@
 import sqlite3
 import pandas as pd
 
-db = sqlite3.connect("Chengdu.db")
+db = sqlite3.connect("C:\\Users\\yijig\\Desktop\\Advanced course\\sqlite_windows\\Chengdu.db")
 c = db.cursor()
 
 QUERY = """
@@ -32,7 +32,7 @@ GROUP BY nodes_tags.value
 ORDER BY num DESC;
 """
 
-c.execute(QUERY_Total_nodes)
+c.execute(QUERY)
 rows = c.fetchall()
 df = pd.DataFrame(rows)
 print(df)

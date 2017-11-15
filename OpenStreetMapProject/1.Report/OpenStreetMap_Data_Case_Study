@@ -9,7 +9,6 @@
 2. 部分街道名称过于简化，如St, Rd; 中英文名称混用，如“人民南路四段 - Renminnanlu 4 Duan”；还有些英文名称混用了中文拼音。
 3. 不一致的城市名，该地图数据的addr:city数据应该都是成都，然而出现了“{'k': 'addr:city', 'v': '双流县华阳镇'}”镇的名称的情况
 4. 门牌号显示不规范，如有的显示“16”而有的显示“16号”
-5. 银行名称显示不规范，有中文、英文、英文简写好几种格式
 ## 2.1 处理邮编数据
 使用audit_postcodes.py进行处理，将以028开头的邮编转成成都邮编610000
 ```commandline
@@ -102,3 +101,5 @@ def audit_housenumber(house_number):
     except ValueError:
         return house_number
 ```
+# 3.数据概述
+## 3.1 清理数据并导入数据库
