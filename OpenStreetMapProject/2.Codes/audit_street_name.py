@@ -5,7 +5,7 @@ import re
 
 
 
-OSMFILE = "Chengdu.osm"
+OSMFILE = "C:\\Users\\yijig\\Desktop\\Advanced course\\OpenStreetMap Project\\Chengdu.osm"
 
 street_type_re = re.compile(r'[路段街号道巷]$', re.IGNORECASE) # 匹配最后一个汉字为“路段街号道巷”之一的街道名
 street_type_en_re = re.compile(r'\b\S+\.?$', re.IGNORECASE) # 匹配英文街道名空格后面的单词
@@ -26,6 +26,7 @@ mapping = {"St":"Street",
             }
 
 def audit_street_type(street_types, street_name):
+    # 分别对英文和中文街道名进行处理
     m = street_type_re.search(street_name)
     n = street_type_en_re.search(street_name)
     if m:
@@ -45,7 +46,6 @@ def audit(osmfile):
     with open(osmfile,"rb") as f:
         street_types = defaultdict(set)
         for event, elem in ET.iterparse(f, events=("start",)):
-
             if elem.tag == "way" or elem.tag == "node":
                 for tag in elem.iter("tag"):
                     if is_street_name(tag):
@@ -55,6 +55,7 @@ def audit(osmfile):
 
 def update_name(name, mapping):
     for key in mapping:
+        # 对于有中英文混杂的名字，用“，”或“-”隔开，我们取中文名称
         if "," in name:
             name = name.split(",")[0]
             if name.endswith(key):

@@ -5,4 +5,100 @@
 这是我目前所在的城市，我希望通过此次分析对这个城市有更深刻的了解：）
 # 2. 地图中发现的问题
 当我从地图数据中取出一个小样本进行小测试时，发现地图数据有如下问题：
+1. 邮编数据有问题，部分邮编显示为028，这是成都的区号，不是邮编
+2. 部分街道名称过于简化，如St, Rd; 中英文名称混用，如“人民南路四段 - Renminnanlu 4 Duan”；还有些英文名称混用了中文拼音。
+3. 不一致的城市名，该地图数据的addr:city数据应该都是成都，然而出现了“{'k': 'addr:city', 'v': '双流县华阳镇'}”镇的名称的情况
+4. 门牌号显示不规范，如有的显示“16”而有的显示“16号”
+5. 银行名称显示不规范，有中文、英文、英文简写好几种格式
+## 2.1 处理邮编数据
+使用audit_postcodes.py进行处理，将以028开头的邮编转成成都邮编610000
+```commandline
+def audit_postcode(postcode):
+    # 如果邮编是‘028’，将其转为成都市邮编‘610000'
+    
+    if postcode.startswith('028'):
+        return '610000'
+    else:
+        return postcode
+```
+## 2.2 处理街道问题
+使用audit_street_name.py进行处理
+* 对于St,Rd等过于简化街道名，将对应名称补全称，即“St => Street; Rd => Street”
+* 对于中英混用的街道名，只保留中文名称，如“人民南路四段 - Renminnanlu 4 Duan => 人民南路四段”
+* 对于英文名称混用中文拼英的，将其转为英文名称，如“jie”=> "Street"
 
+audit_street_name.py
+```commandline
+street_type_re = re.compile(r'[路段街号道巷]$', re.IGNORECASE) # 匹配最后一个汉字为“路段街号道巷”之一的街道名
+street_type_en_re = re.compile(r'\b\S+\.?$', re.IGNORECASE) # 匹配英文街道名空格后面的单词
+
+
+expected = ["Street", "Avenue", "Boulevard", "Drive", "Court", "Place", "Square", "Lane", "Road",
+            "Trail", "Parkway", "Commons", "段", "街","路","号","巷","道","West","East","North","South"]
+
+
+mapping = {"St":"Street",
+           "St.":"Street",
+           "st.":"Street",
+           " st":" Street",
+           "Rd":"Road",
+           "Rd.":"Road",
+           "Ave":"Avenue",
+           "Ave.":"Avenue",
+           "jie": "Street",
+           "Jie": "Street"
+            }
+
+
+def audit_street_type(street_types, street_name):
+    # 分别对英文和中文街道名进行处理
+    m = street_type_re.search(street_name)
+    n = street_type_en_re.search(street_name)
+    if m:
+        street_type = m.group()
+        if street_type not in expected:
+            street_types[street_type].add(street_name)
+    else:
+        if n:
+            street_type = n.group()
+            if street_type not in expected:
+                street_types[street_type].add(street_name)
+
+
+def update_name(name, mapping):
+    for key in mapping:
+        # 对于有中英文混杂的名字，用“，”或“-”隔开，我们取中文名称
+        if "," in name:
+            name = name.split(",")[0]
+            if name.endswith(key):
+                return name.replace(key, mapping[key])
+        if "-" in name:
+            return name.split(" - ")[0]
+        elif name.endswith(key):
+            return name.replace(key, mapping[key])
+```
+## 2.3 处理城市名称
+使用audit_city.py 处理
+将所有异常显示的城市名字改为成都
+```commandline
+def audit_city(city_name):
+    # 如果city_name不是是‘成都市’，将其转为‘成都市’
+    if city_name != "成都市":
+        return '成都市'
+    else:
+        return city_name
+```
+## 2.4 处理门牌号
+使用audit_housenumber.py处理
+统一显示“xx号”
+```commandline
+def audit_housenumber(house_number):
+    """
+    如果是数字的话，那就在后面加上“号”
+    """
+    try:
+        if int(house_number):
+            return house_number + "号"
+    except ValueError:
+        return house_number
+```
