@@ -7,8 +7,8 @@ import re
 
 OSMFILE = "Chengdu.osm"
 
-street_type_re = re.compile(r'[路段街号道巷]$', re.IGNORECASE)
-street_type_en_re = re.compile(r'\b\S+\.?$', re.IGNORECASE)
+street_type_re = re.compile(r'[路段街号道巷]$', re.IGNORECASE) # 匹配最后一个汉字为“路段街号道巷”之一的街道名
+street_type_en_re = re.compile(r'\b\S+\.?$', re.IGNORECASE) # 匹配英文街道名空格后面的单词
 
 expected = ["Street", "Avenue", "Boulevard", "Drive", "Court", "Place", "Square", "Lane", "Road",
             "Trail", "Parkway", "Commons", "段", "街","路","号","巷","道","West","East","North","South"]
