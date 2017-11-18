@@ -1,0 +1,72 @@
+---
+title: "Lession 3"
+output: 
+  html_document: 
+    fig_height: 7
+    fig_width: 10
+editor_options: 
+  chunk_output_type: inline
+---
+
+## 快速打开Terminal 
+Alt + Shift + R
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+
+## Reading in Data
+```{r}
+getwd()
+list.files()
+pf <- read.csv("pseudo_facebook.tsv",sep = "\t")
+names(pf)
+```
+## Histogram of Users' Birthdays
+```{r}
+library(ggplot2)
+library(ggthemes)
+
+theme_set(theme_minimal(12))
+names(pf)
+qplot(x = dob_day, data = pf) +
+  scale_x_continuous(breaks = 1:31)
+```
+## Facting
+```{r}
+qplot(x = dob_day,data = pf)+
+  scale_x_continuous(breaks = 1:31) +
+  facet_wrap(~dob_month,ncol = 4)
+```
+## Fried Count 
+```{r}
+names(pf)
+qplot(x = friend_count, data = pf) +
+  scale_x_continuous()
+```
+## Limiting the Axes
+```{r}
+qplot(x = friend_count,data = pf,xlim = c(0,1000))
+
+qplot(x = friend_count,data = pf) +
+  scale_x_continuous(limits = c(0,1000))
+```
+## Adusting the Bin Width, Omitting Any NA Observations
+### 使用subset(pf, !is.na(gender))忽略缺省值NA
+```{r}
+qplot(x = friend_count,data = subset(pf,!is.na(gender)), binwidth = 25) +
+  scale_x_continuous(limits = c(0,1000), breaks = seq(0,1000,50)) +
+  facet_wrap(~gender)
+  
+```
+## Statistic 'by' Gender
+```{r}
+table(pf$gender)
+by(pf$friend_count,pf$gender,summary)
+```
+
