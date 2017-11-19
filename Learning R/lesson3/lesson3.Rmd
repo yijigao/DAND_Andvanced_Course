@@ -97,17 +97,132 @@ by(pf$age,pf$gender,summary)
 
 ```
 
-## Transforming Data
+## Transforming Data  处理过于离散的数据，缩短尾巴
 ```{r}
 library(gridExtra)
+library(ggplot2)
+#p1 <- qplot(x = friend_count,data = pf,binwidth=100)
 
-p1 <- qplot(x = friend_count,data = pf,binwidth=100)
+#p2 <- qplot(x = log10(pf$friend_count + 1), data = pf,binwidth=.1)
 
-p2 <- qplot(x = log10(pf$friend_count + 1), data = pf,binwidth=.1)
+#p3 <- qplot(x = sqrt(pf$friend_count), data = pf,binwidth=1)
 
-p3 <- qplot(x = sqrt(pf$friend_count), data = pf,binwidth=1)
-
+p1 <- ggplot(aes(x = friend_count), data = pf) + geom_histogram()
+p2 <- p1 + scale_x_log10()
+p3 <- p1 + scale_x_sqrt()
+             
 grid.arrange(p1,p2,p3,ncol=1)
+```
 
+## Add a Scaling layer
+```{r}
+logScale <- qplot(x = log10(friend_count),data = pf)
+
+countScale <- ggplot(aes(x = friend_count), data =pf) +
+  geom_histogram() +
+  scale_x_log10()
+
+grid.arrange(logScale, countScale, ncol = 2)
+
+qplot(x = friend_count, data = pf) +
+  scale_x_log10()
+```
+
+## Frequency Polygons (Before we had histograms)
+```{r}
+qplot(x = friend_count, data = subset(pf,!is.na(gender)),
+      binwidth = 10) +
+  scale_x_continuous(lim = c(0,1000), breaks = seq(0,1000,50)) +
+  facet_wrap(~gender)
+
+# 创建频率多边形, geom, color(不再需要facet_wrap)
+qplot(x = friend_count, y = ..count../sum(..count..),
+      data = subset(pf,!is.na(gender)),
+      xlab = "Friend Count",
+      ylab = "Propotion of Users with that friend count",
+      binwidth = 10, geom = "freqpoly", color = gender) +
+  scale_x_continuous(limits = c(0,1000), breaks = seq(0,1000,50))
+```
+
+### Which gender makes more likes non www_likes
+```{r}
+qplot(x = www_likes, y = ..count../sum(..count..),
+      data = subset(pf, !is.na(gender)),
+      xlab = "www_likes",
+      ylab = "propotion of Users with that www_likes",
+      binwidth = 500, geom = "freqpoly", color = gender)
+
+
+
+# ggplot 语法
+
+ggplot(aes(x = friend_count, y = ..density../sum(..density..)),
+       data = subset(pf,!is.na(gender))) +
+  geom_freqpoly(aes(color=gender), binwidth=10) +
+  scale_x_continuous(limits = c(0,1000), breaks = seq(0,1000,50)) + 
+  xlab("好友数量")+
+  ylab("Percentage of users with that friend count")
+
+
+
+ggplot(aes(x = www_likes),data = subset(pf,!is.na(gender))) +
+  geom_freqpoly(aes(color = gender)) +
+  scale_x_log10()
+```
+
+## Likes on the web
+```{r}
+by(pf$www_likes, pf$gender, sum)
+
+ggplot(aes(x=www_likes,y = ..count.. /sum(..count..)),
+       data = subset(pf,!is.na(gender))) +
+  geom_freqpoly(aes(color=gender))
+
+```
+ ## Box Plots
+```{r}
+qplot(x = friend_count, data = subset(pf,!is.na(gender)),
+      binwidth = 25) +
+  scale_x_continuous(limits = c(0,1000), breaks = seq(0,1000,50)) +
+  facet_wrap(~gender)
+
+qplot(x = gender, y = friend_count,
+  data = subset(pf,!is.na(gender)),geom = "boxplot") +
+  scale_y_continuous(limits = c(0,1000))
+
+qplot(x = gender, y = friend_count,
+  data = subset(pf,!is.na(gender)),geom = "boxplot", ylim = c(0,1000))
+
+
+qplot(x = gender, y = friend_count,
+  data = subset(pf,!is.na(gender)),geom = "boxplot") + 
+  coord_cartesian(ylim = c(0,250))
+
+by(pf$friend_count,pf$gender,summary)
+```
+ 
+## friend initiated 
+```{r}
+qplot(x = gender, y = friendships_initiated,
+      data = subset(pf,!is.na(gender)),geom = "boxplot") +
+  coord_cartesian(ylim = c(0,250))
+by(pf$friendships_initiated,pf$gender,summary)
+```
+
+## Getting Logical
+```{r}
+summary(pf$mobile_likes)
+
+summary(pf$mobile_likes > 0)
+
+moblie_check_in <- NA
+pf$mobile_check_in <- ifelse(pf$mobile_likes > 0, 1, 0)
+pf$mobile_check_in <- factor(pf$mobile_check_in)
+summary(pf$mobile_check_in)
+```
+What percent of check in using mobile?
+```{r}
+summary(pf$mobile_check_in)
+sum(pf$mobile_check_in == 1) / length(pf$mobile_check_in)
 ```
 
