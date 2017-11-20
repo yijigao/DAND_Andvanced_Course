@@ -8,7 +8,7 @@ editor_options:
   chunk_output_type: inline
 ---
 
-## 快速打开Terminal 
+## ���ٴ��ն�Terminal 
 Alt + Shift + R
 
 ```{r setup, include=FALSE}
@@ -57,7 +57,7 @@ qplot(x = friend_count,data = pf) +
   scale_x_continuous(limits = c(0,1000))
 ```
 ## Adusting the Bin Width, Omitting Any NA Observations
-### 使用subset(pf, !is.na(gender))忽略缺省值NA
+### ʹ��subset(pf, !is.na(gender))�Թ�NA
 ```{r}
 qplot(x = friend_count,data = subset(pf,!is.na(gender)), binwidth = 25) +
   scale_x_continuous(limits = c(0,1000), breaks = seq(0,1000,50)) +
@@ -135,7 +135,7 @@ qplot(x = friend_count, data = subset(pf,!is.na(gender)),
   scale_x_continuous(lim = c(0,1000), breaks = seq(0,1000,50)) +
   facet_wrap(~gender)
 
-# 创建频率多边形, geom, color(不再需要facet_wrap)
+# 创建频率多边�?, geom, color(不再需要facet_wrap)
 qplot(x = friend_count, y = ..count../sum(..count..),
       data = subset(pf,!is.na(gender)),
       xlab = "Friend Count",
