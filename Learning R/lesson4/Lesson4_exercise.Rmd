@@ -1,0 +1,175 @@
+
+
+```{r}
+# import data set
+library(ggplot2)
+dim(diamonds)
+```
+
+##  1. 价格与x
+
+```{r}
+# Create a scatterplot of price vs x
+
+ggplot(aes(x, price), data = diamonds) +
+  geom_point()
+
+```
+
+## 2. 发现- 价格与x
+***
+除部分x为0的钻石价格，没有看到（0,4）之间的钻石，x=4以后价格与x成线性关系
+***
+
+## 3. 相关性
+```{r}
+# correlation between price and x
+with(diamonds, cor.test(x, price))
+
+# correlation betweenn price and y
+with(diamonds, cor.test(y, price))
+
+# correlation between price and z
+with(diamonds, cor.test(z, price))
+```
+
+## 4.价格与深度
+```{r}
+# create a simple scatter plot of price vs depth
+
+ggplot(aes(depth, price), data = diamonds) +
+  geom_point(color = "red")
+```
+
+## 5.调整-价格与深度
+```{r}
+# Change the code to make the transparency of the point to 
+# be 1/100 of what they are now and mark the x-axis every 2
+# units.
+
+ggplot(aes(depth, price), data = diamonds) +
+  geom_point(alpha = 0.01, color = "red") +
+  scale_x_continuous(breaks = c(0,80,2))
+quantile(diamonds$depth,.95)
+```
+## 6. 典型深度范围
+```{r}
+# most diamends are between what value of depth
+ggplot(aes(depth, price), data = diamonds) +
+  geom_point(alpha = 0.01, color = "red") +
+  scale_x_continuous(breaks = c(0, 80))
+```
+
+## 7. 相关性-价格与深度
+```{r}
+# correlation of depth vs price
+with(diamonds, cor.test(depth, price))
+```
+***
+Based on the correlation coefficent would you use depth to predict the price of a diamend?
+No. The correlation is low
+***
+
+## 8.价格与克拉
+
+```{r}
+# Create a scatter plot of price vs carat and omit the top 1% carat values
+ggplot(data = diamonds, aes(carat, price)) +
+  geom_point() +
+  xlim(0, quantile(diamonds$carat, .99))
+```
+
+## 9.价格与体积
+```{r}
+names(diamonds)
+diamonds$volume <- diamonds$x * diamonds$y * diamonds$z
+```
+
+## 10.发现-价格与体积
+```{r}
+
+ggplot(diamonds,aes(volume, price)) +
+  geom_point()
+
+# how many diamends have 0 volume?
+library(plyr)
+count(diamonds$volume ==  0)
+```
+***
+What are your observations from the price vs volume scatterplot?
+Some volumes are 0! There's an expensive diamond with a volume near 4000, and a cheaper diamond with a volume near 900.
+***
+## 11.子集相关性
+```{r}
+# what's the correlation of price and volume?
+# Exclude diamends that have a vulume of 0 and that are greater than or equal to 800
+with(subset(diamonds, volume != 0 & volume < 800), cor.test(volume, price))
+```
+## 12.调整-价格与体积
+```{r}
+# Subset the data to exclude diamends with a volume greater than or equal to 800, Also, exclude diamends with a volume of 0.
+# Adjust the transparency of the points and add a linear model to the plot.
+ggplot(subset(diamonds, volume !=0 & volume < 800), aes(volume, price)) +
+  geom_point() +
+  geom_smooth(method = "lm")
+```
+## 13.平均价格-净度
+```{r}
+# Use the function dplyr package to crate a new data frame containing info on diamends by clarity
+# Name the data frame diamendsByClarity
+# The data frame should contain the following variables in this order
+# 1.mean_price
+# 2.median_price
+# 3.min_price
+# 4.max_price
+# 5.n
+
+library(dplyr)
+
+
+
+diamondsByClarity <- diamonds %>%
+  group_by(clarity) %>%
+  summarise(mean_price = mean(as.numeric(price)),
+            median_price = median(as.numeric(price)),
+            min_price = min(as.numeric(price)),
+            max_price = max(as.numeric(price)),
+            n = n()) %>%
+  arrange(clarity)
+
+head(diamendsByClarity)
+```
+
+## 14.平均价格柱状图
+```{r}
+# We've created summary data frames with the mean price by clarity and color. You can run the code by clarity and color
+
+
+diamonds_by_clarity <- group_by(diamonds, clarity)
+diamonds_mp_by_clarity <- summarise(diamonds_by_clarity, 
+                                    mean_price = mean(price))
+
+diamonds_by_color <- group_by(diamonds, color)
+diamonds_mp_by_color <- summarise(diamonds_by_color,
+                                  mean_price = mean(price))
+
+
+# Write a additional code to create two bar plots on one output image using the grid.arrange() function from the package gridExtra
+library(gridExtra)
+
+p1 <- ggplot(diamonds_mp_by_clarity,aes(x = clarity, y = mean_price)) +
+  geom_bar(stat = "identity")
+
+p2 <- ggplot(diamonds_mp_by_color,aes(color, mean_price)) +
+  geom_bar(stat = "identity")
+
+
+grid.arrange(p1, p2, ncol = 1)
+
+
+```
+
+## 15.平均价格趋势
+***
+What do you notice in each of the bar charts for mean price by clarity and mean price by color?
+Mean price tends to decrease as clarity improves. The same can be said for color.
