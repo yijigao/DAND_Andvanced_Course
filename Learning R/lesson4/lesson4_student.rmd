@@ -179,14 +179,17 @@ Response:
 See the Instructor Notes of this video to download Moira's paper on perceived audience size and to see the final plot.
 
 Notes:
-
+进一步汇总年龄与好友数的关系，使用相关系数
 ***
 
 ### Correlation
 Notes:
 
 ```{r Correlation}
+?cor.test()
+cor.test(pf$age,pf$friend_count,alternative = "g",method = "pearson")
 
+with(pf,cor.test(age,friend_count,method = "pearson"))
 ```
 
 Look up the documentation for the cor.test function.
@@ -200,20 +203,31 @@ Response:
 Notes:
 
 ```{r Correlation on Subsets}
-with(                 , cor.test(age, friend_count))
+with(subset(pf,age <= 70), cor.test(age, friend_count))
 ```
 
 ***
 
 ### Correlation Methods
 Notes:
-
+单调关系的度量，如等级相关度量spearman
 ***
+```{r}
+with(subset(pf, age <= 70), cor.test(age, friend_count, method = "spearman"))
+```
+
+
 
 ## Create Scatterplots
 Notes:
 
 ```{r}
+# quantile(data, prob.)数据的百分比
+ggplot(aes(www_likes_received,likes_received),data = pf) +
+  geom_point(color="red") +
+  xlim(0, quantile(pf$www_likes_received, .95)) +
+  ylim(0, quantile(pf$likes_received, .95)) +
+  geom_smooth(method = "lm", color = "black")
 
 ```
 
@@ -223,7 +237,9 @@ Notes:
 Notes:
 
 ```{r Strong Correlations}
+with(pf, cor.test(www_likes_received, likes_received))
 
+# 0.948 很强的相关
 ```
 
 What's the correlation betwen the two variables? Include the top 5% of values for the variable in the calculation and round to 3 decimal places.
@@ -233,12 +249,16 @@ What's the correlation betwen the two variables? Include the top 5% of values fo
 ```
 
 Response:
-
+0.948
 ***
 
 ### Moira on Correlation
 Notes:
+为什么要首先观察相关性?这能告诉我们关于两个变量的什么信息?
 
+除了生成散点图，可直观观察两个变量的相关性外，通常还会测量其相关系数，来真实量化其相关程度，这一点非常重要。
+在处理问题时，做某种回归，即对事物建模，将变量放入回归，回归的一个假设就是这些变量彼此独立，如果所有变量都彼此相关，那么无法判断是那个变量产生的这种现象
+因此，首先衡量变量之间的相关性很重要，这可以帮助你确认哪些变量不要一起投入，可以帮助你判断实际上要保留那些变量
 ***
 
 ### More Caution with Correlation
@@ -252,7 +272,11 @@ library(alr3)
 Create your plot!
 
 ```{r Temp vs Month}
+data("Mitchell")
+?Mitchell
 
+ggplot(aes(Month, Temp),data = Mitchell) +
+  geom_point(color = "red")
 ```
 
 ***
@@ -264,7 +288,7 @@ b. What is the actual correlation of the two variables?
 (Round to the thousandths place)
 
 ```{r Noisy Scatterplots}
-
+with(Mitchell, cor.test(Month, Temp))
 ```
 
 ***
@@ -273,7 +297,9 @@ b. What is the actual correlation of the two variables?
 Notes:
 
 ```{r Making Sense of Data}
-
+ggplot(aes(Month, Temp),data = Mitchell) +
+  geom_point(color = "red") +
+  scale_x_continuous(breaks = seq(0,203,12))
 ```
 
 ***
@@ -282,9 +308,11 @@ Notes:
 
 What do you notice?
 Response:
-
+6,7月份温度最高
 Watch the solution video and check out the Instructor Notes!
 Notes:
+The cor and cor.test functions determine the strength of a linear relationship, but they may miss other relationships in the data.
+
 
 ***
 
@@ -292,6 +320,11 @@ Notes:
 Notes:
 
 ```{r Understanding Noise: Age to Age Months}
+ggplot(aes(age, friend_count_mean), data = pf.fc_by_age) +
+  geom_line()
+
+pf$age_with_months <- with(pf, age + (1- dob_month/12))
+
 
 ```
 
@@ -300,12 +333,40 @@ Notes:
 ### Age with Months Means
 
 ```{r Age with Months Means}
+# Another way:
+# %>% 可以将函数链接到数据集上
+# pf.fc_by_age<- pf %>%
+#   group_by(age) %>%
+#   summarise(friend_count_mean = mean(friend_count),
+#           friend_count_median = median(friend_count),
+#           n = n()) %>%
+#   arrange(age)
 
+pf.fc_by_age_months <- pf%>%
+  group_by(age_with_months) %>%
+  summarise(friend_count_mean = mean(friend_count),
+            friend_count_median = median(friend_count),
+            n = n()) %>%
+  arrange(age_with_months)
+
+head(pf.fc_by_age_months)
 ```
 
 Programming Assignment
 ```{r Programming Assignment}
 
+p1 <- ggplot(aes(age, friend_count_mean), data = subset(pf.fc_by_age, age < 71)) +
+  geom_line()
+
+p2 <- ggplot(aes(age_with_months, friend_count_mean), data = subset(pf.fc_by_age_months, age_with_months < 71)) +
+  geom_line() +
+  geom_smooth()
+
+p3 <- ggplot(aes(round(age/5) * 5, friend_count), 
+             data = subset(pf, age < 71)) +
+  geom_line(stat = "summary", fun.y = mean)
+library(gridExtra)
+grid.arrange(p1, p2, p3, ncol = 1)
 ```
 
 ***
