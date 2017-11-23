@@ -1,3 +1,8 @@
+---
+output: html_document
+editor_options: 
+  chunk_output_type: inline
+---
 Lesson 5
 ========================================================
 
@@ -140,7 +145,9 @@ ggplot(subset(pf, !is.na(year_joined.bucket)), aes(age, friend_count)) +
 Notes:
 
 ```{r Plot the Grand Mean}
-
+ggplot(subset(pf, !is.na(year_joined.bucket)), aes(age, friend_count)) +
+  geom_line(aes(color = year_joined.bucket), stat = "summary", fun.y = mean) +
+  geom_line(stat = "summary", fun.y = mean, linetype = 2 )
 ```
 
 ***
@@ -149,7 +156,8 @@ Notes:
 Notes:
 
 ```{r Friending Rate}
-
+firending_rate <- with(subset(pf, tenure >= 1), friend_count / tenure)
+summary(firending_rate)
 ```
 
 ***
@@ -162,6 +170,8 @@ What is the median friend rate?
 What is the maximum friend rate?
 
 ```{r Friendships Initiated}
+ggplot(subset(pf, !is.na(year_joined.bucket) & tenure >= 1), aes(tenure, friendships_initiated / tenure)) +
+  geom_line(aes(color = year_joined.bucket), stat = "summary", fun.y = mean)
 
 ```
 
@@ -196,6 +206,10 @@ ggplot(aes(x = 90 * round(tenure / 90), y = friendships_initiated / tenure),
             stat = "summary",
             fun.y = mean)
 
+ggplot(aes(x = tenure, y = friendships_initiated / tenure),
+       data = subset(pf, tenure >= 1)) +
+  geom_smooth(aes(color = year_joined.bucket),method = "lm" , stat = "summary", fun.y = mean)
+
 ```
 
 ***
@@ -207,6 +221,15 @@ Notes:
 
 ### Introducing the Yogurt Data Set
 Notes:
+```{r}
+yo <- read.csv("yogurt.csv")
+str(yo)
+yo$id <- factor(yo$id)
+str(yo)
+
+ggplot(yo, aes(price)) +
+  geom_histogram(binwidth = 10)
+```
 
 ***
 
@@ -215,6 +238,9 @@ Notes:
 
 ```{r Histograms Revisited}
 
+summary(yo)
+length(unique(yo$price))
+table(yo$price)
 ```
 
 ***
@@ -224,6 +250,12 @@ Notes:
 
 ```{r Number of Purchases}
 
+
+yo <- transform(yo, all.purchases = (strawberry + blueberry + pina.colada + plain + mixed.berry ))
+head(yo)
+
+ggplot(yo, aes(all.purchases)) +
+  geom_histogram(binwidth = 1, fill = "blue")
 ```
 
 ***
@@ -233,19 +265,29 @@ Notes:
 
 ```{r Prices over Time}
 
+ggplot(yo, aes(time, price)) +
+  geom_jitter(alpha = 1/4, shape = 21, fill = I("#F79420"))
+
 ```
 
 ***
 
 ### Sampling Observations
 Notes:
-
+×ÓÑù±¾
 ***
 
 ### Looking at Samples of Households
 
 ```{r Looking at Sample of Households}
+set.seed(123)
+sample.ids <- sample(levels(yo$id), 16)
 
+
+ggplot(subset(yo, id %in% sample.ids), aes(time, price)) +
+  facet_wrap(~id) +
+  geom_line() +
+  geom_point(aes(size = all.purchases), shape = 1)
 ```
 
 ***
@@ -262,6 +304,15 @@ Notes:
 
 ### Scatterplot Matrix
 Notes:
+```{r}
+library(GGally)
+theme_set(theme_minimal(20))
+
+set.seed(1836)
+pf_subset <- pf[,c(2:15)]
+names(pf_subset)
+ggpairs(pf_subset[sample.int(nrow(pf_subset),1000),])
+```
 
 ***
 
