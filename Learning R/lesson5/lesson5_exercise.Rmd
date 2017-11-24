@@ -1,0 +1,101 @@
+---
+title: "Lesson 5 exercise"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## 1.带有分面和颜色的价格直方图
+```{r}
+
+# 这里使用fill = cut 而不是 color = cut ! 
+
+library(ggplot2)
+ggplot(diamonds, aes(x = price)) +
+  geom_histogram(aes(fill = cut)) +
+  scale_fill_brewer(type = "qual") +
+  facet_wrap(~color) +
+  scale_x_log10()
+```
+## 2.价格与按切工填色的表格
+```{r}
+# Create a scatterplot of diamond price vs table and color the points by the cut of the diamond.
+
+# Note: a color paletter of type "qual" was used to color the scatterplot using scale_color_brewer(type = "qual")
+
+ggplot(data = diamonds, aes(x = table, y = price, color = cut)) +
+  geom_point() +
+  scale_color_brewer(type = "qual") +
+  scale_x_continuous(limits = c(50,80), breaks = seq(50,80,2))
+```
+
+## 3. 典型表值
+
+
+## 4.价格与体积和钻石净度
+```{r}
+# Create a scatterplot of diamond price vs volume (x * y * z) and color the points by the clarity of diamonds.Use scale on the y-axis to take the log10 of price.We should also omit the top 1% of diamond volume from the plot
+
+# Note: scale_color_brewer(type = "div")
+diamonds$volume <- with(diamonds, x * y * z)
+
+ggplot(data = subset(diamonds, volume != 0), aes(x = volume, y = price, color = clarity)) +
+  geom_point() +
+  xlim(0, quantile(diamonds$volume, .99)) +
+  scale_color_brewer(type = "div") +
+  scale_y_log10()
+  
+```
+## 5.新建友谊的比例
+```{r}
+# Create a new variable called "prop_initiated" in the Pseudo-Facebook data set.
+# The variable should contain the propotion of friendships that the user initiated
+
+pf <- read.delim("pseudo_facebook.tsv")
+pf$prop_initiated <- with(pf, friendships_initiated / (friend_count))
+head(pf)
+```
+
+## 6. prop_initiated与使用时长
+```{r}
+pf$year_joined <- floor(2014 - pf$tenure / 365)
+
+pf$year_joined.bucket <- cut(pf$year_joined, c(2004,2009,2011,2012,2014))
+
+
+# Create a line graph of the median propotion of firendship initied("prop_initiated") vs tenure and color the line by year_jonied.bucket
+
+ggplot(data = subset(pf,tenure >= 1), 
+       aes(x = tenure, y = prop_initiated, color = year_joined.bucket)) +
+  geom_line(stat = "summary", fun.y = median, na.rm = TRUE)
+
+```
+
+## 7.平滑化prop_initiated 与使用时长
+```{r}
+ggplot(data = subset(pf, tenure >= 1), 
+       aes(x = 10 * round(tenure / 10), y = prop_initiated, color = year_joined.bucket)) +
+  geom_line(stat = "summary", fun.y = median, na.rm = TRUE)
+```
+
+## 8.最大的prop_initiated组
+## 9.最大的组均值prop_initiated
+```{r}
+tapply(pf$prop_initiated,pf$year_joined.bucket,mean)
+```
+## 10.经过分组、分面和填色的价格/克拉
+```{r}
+# Create a scatter plot of the price/carat ratio of diamonds.The variable x should be assigned to cut.The points should be colored by diamond color, and the plot should be faceted by clarity 
+
+# geom_jitter
+ggplot(data = diamonds, aes(x = cut, y = price/carat, color = color)) +
+  geom_point() +
+  geom_jitter() +
+  scale_color_brewer(type = "div") +
+  facet_wrap(~clarity)
+
+```
+
+
