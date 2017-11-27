@@ -5,6 +5,12 @@ editor_options:
 ---
 WineQualityWhites by yijigao92@gmail.com
 ========================================================
+```{r global_options, include=FALSE}
+knitr::opts_chunk$set(message = FALSE, warning = FALSE, echo = FALSE)
+```
+
+
+
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, packages}
 # Load all of the packages that you end up using
@@ -59,13 +65,14 @@ ggplot(WineQualityWhites, aes(fixed.acidity)) +
 
 白葡萄酒的固定酸度在6-8之间，呈正态分布；
 
-```{r echo=FALSE, message=FALSE}
+```{r echo=FALSE, message=FALSE, warning=FALSE}
 
 f1 <-  ggplot(WineQualityWhites, aes(volatile.acidity)) +
   geom_histogram(fill = "#0000CD")
 
-f2 <- ggplot(WineQualityWhites, aes(volatile.acidity)) +
+f2 <- ggplot(WineQualityWhites, aes(volatile.acidity), xlab) +
   geom_histogram(fill = "#8A2BE2")+
+  xlab("volatile.acidity(log10)")
   scale_x_log10()
 
 f3 <- ggplot(WineQualityWhites, aes(residual.sugar)) +
@@ -73,21 +80,24 @@ f3 <- ggplot(WineQualityWhites, aes(residual.sugar)) +
 
 f4 <- ggplot(WineQualityWhites, aes(residual.sugar)) +
   geom_histogram(fill = "#8A2BE2") +
-  scale_x_log10()
+  scale_x_log10() +
+  xlab("residual.sugar(log10)")
 
 f5 <- ggplot(WineQualityWhites, aes(chlorides)) +
   geom_histogram(fill = "#0000CD")
 
 f6 <- ggplot(WineQualityWhites, aes(chlorides)) +
   geom_histogram(fill = "#8A2BE2") +
-  scale_x_log10()
+  scale_x_log10() +
+  xlab("chlorides(log10)")
 
 f7 <- ggplot(WineQualityWhites, aes(free.sulfur.dioxide)) +
   geom_histogram(fill = "#0000CD")
 
 f8 <- ggplot(WineQualityWhites, aes(free.sulfur.dioxide)) +
   geom_histogram(fill = "#8A2BE2") +
-  scale_x_log10()
+  scale_x_log10() +
+  xlab("free.sulfur.dioxide(log10)")
 
 grid.arrange(f1, f2, f3, f4, f5, f6, f7, f8, ncol = 2)
 ```
@@ -125,7 +135,8 @@ ggplot(WineQualityWhites, aes(alcohol)) +
 ggplot(WineQualityWhites, aes(alcohol)) +
   geom_histogram(fill = I("#0000CD")) +
   ggtitle("Alcohol") +
-  scale_x_log10()
+  scale_x_log10() +
+  xlab("Alcohol(log10)")
 ```
 
 
@@ -161,88 +172,94 @@ cor(WineQualityWhites)
 
 为了研究quality究竟与哪些变量相关，先概览下quality与各变量的相关系数，可以看到，quality与alcohol, density相关性最强，其次是volatile.acidity, chlorides, total.sulfur.dioxide, 与citric.acidity, residual.sugar, free.sulfur.dioxide, pH, sulphates相关性不大
 
-```{r echo=FALSE, message=FALSE}
+```{r fig.width=15, fig.height=15}
 ggpairs(WineQualityWhites, 
         lower = list(continuous = wrap("points", shape = I("."))),
-        upper = list(combo = wrap("box", outlier.shape = I("."))))
+        upper = list(combo = wrap("box", outlier.shape = I("."),
+                                  continuous = wrap("cor", size = 3))))
 ```
 
 ```{r echo=FALSE, message=FALSE}
-ggplot(WineQualityWhites, aes(alcohol, quality)) +
+ggplot(WineQualityWhites, aes(factor(quality),alcohol)) +
   geom_point()
 
-ggplot(WineQualityWhites, aes(alcohol, quality)) +
-  geom_point(alpha = 1/10, size =2, position = "jitter") +
-  scale_y_continuous(breaks = seq(2,10,1))
+ggplot(WineQualityWhites, aes(factor(quality),alcohol)) +
+  geom_point(alpha = 0.3, size =2, position = "jitter")
 ```
 
 绘制了酒精-品质散点图，第一张图可以看出过度绘制，对图添加抖动，从酒精与品质的散点图可以看出，酒精浓度越高，高品质的酒更集中，大致呈正相关关系。
 
-```{r echo=FALSE, message=FALSE}
-ggplot(WineQualityWhites, aes(density, quality)) +
+```{r message=FALSE, warning=FALSE, echo=FALSE}
+ggplot(WineQualityWhites, aes(factor(quality),density)) +
   geom_point(alpha = 1/10, size = 2, position = "jitter") +
-  xlim(min(WineQualityWhites$density), quantile(WineQualityWhites$density, .99)) +
-  scale_y_continuous(breaks = seq(2,10,1))
+  ylim(min(WineQualityWhites$density), quantile(WineQualityWhites$density, .99))
 ```
 
 从密度-品质散点图看，密度的白葡萄酒的品质在5集中更多，而低密度的酒高品质集中。这个结果也好理解，因为酒精浓度越高，密度越小，我们可以来看酒精浓度与酒密度的关系
 
-```{r echo=FALSE, message=FALSE}
+```{r echo=FALSE, message=FALSE, warning=FALSE}
 ggplot(WineQualityWhites, aes(alcohol, density)) +
   geom_point(alpha = 1/20,size = 1.5, position = "jitter") +
-  geom_smooth(method = "lm")
+  geom_smooth(method = "lm") +
+  ylim(min(WineQualityWhites$density), quantile(WineQualityWhites$density, .99))
 
 ```
 
 上图证实了我们的解释，酒的密度随酒精浓度升高而降低。
 
-```{r echo=FALSE, message=FALSE}
-ggplot(WineQualityWhites, aes(volatile.acidity, quality)) +
-  geom_point(alpha = 1/20, size = 1.5, position = "jitter")
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+ggplot(WineQualityWhites, aes(factor(quality), volatile.acidity)) +
+  geom_point(alpha = 0.3, size = 1.5, position = "jitter")
 
-ggplot(WineQualityWhites,aes(chlorides, quality))+
-  geom_point(alpha = 1/20, size = 1.5, position = "jitter") +
-  xlim(0, quantile(WineQualityWhites$chlorides, .99))
+ggplot(WineQualityWhites,aes(factor(quality), chlorides))+
+  geom_point(alpha = 0.3, size = 1.5, position = "jitter") +
+  ylim(0, quantile(WineQualityWhites$chlorides, .99))
 ```
 
 看起来volatile.acidity 和 chlorides 呈负相关
 
 ```{r echo=FALSE, message=FALSE}
-WineQualityWhites$quality.r <- as.ordered(WineQualityWhites$quality)
 
-by(WineQualityWhites$alcohol, WineQualityWhites$quality.r, summary)
+by(WineQualityWhites$alcohol, factor(WineQualityWhites$quality), summary)
 
-ggplot(WineQualityWhites, aes(x = quality.r, y = alcohol)) +
-  geom_boxplot()
-
+ggplot(WineQualityWhites, aes(x = factor(quality), y = alcohol)) +
+   geom_jitter(alpha = 0.1) +
+   geom_boxplot(alpha = 0.5, size = 0.5) +
+   theme_gray()
 ```
 
 ```{r}
-by(WineQualityWhites$density, WineQualityWhites$quality.r, summary)
+by(WineQualityWhites$density, factor(WineQualityWhites$quality), summary)
 
-ggplot(WineQualityWhites, aes(x = quality.r, y = density)) +
-  geom_boxplot() +
-  coord_cartesian(ylim = c(0.985, 1))
+ggplot(WineQualityWhites, aes(x = factor(quality), y = density)) +
+   geom_jitter(alpha = 0.1) +
+   geom_boxplot(alpha = 0.5, size = 0.5) +
+   coord_cartesian(ylim = c(0.989, 1.000)) +
+   theme_gray()
 ```
 
 
-为了进一步研究与品质相关的因素，我将quality变量转化为ordered类型变量，命名为quality.r。上图是分别是quality与alcohol浓度, density的箱线图，可以明显看出，高品质的白葡萄酒alcohol中位数要高于低品质白葡萄酒,density中位数高品质酒明显低于低品质酒。
+为了进一步研究与品质相关的因素，我作图时使用factor将quality变量转化为ordered类型变量,上图是分别是quality与alcohol浓度, density的箱线图，可以明显看出，高品质的白葡萄酒alcohol中位数要高于低品质白葡萄酒,density中位数高品质酒明显低于低品质酒。
 
 ```{r echo=FALSE, message=FALSE}
-by(WineQualityWhites$volatile.acidity, WineQualityWhites$quality.r, summary)
+by(WineQualityWhites$volatile.acidity, factor(WineQualityWhites$quality), summary)
 
-ggplot(WineQualityWhites, aes(x = quality.r, y = volatile.acidity)) +
-  geom_boxplot() +
-  coord_cartesian(ylim = c(0, .5))
+ggplot(WineQualityWhites, aes(x = factor(quality), y = volatile.acidity)) +
+   geom_jitter(alpha = 0.1) +
+   geom_boxplot(alpha = 0.5, size = 0.5) +
+   coord_cartesian(ylim = c(0, 0.55)) +
+   theme_gray()
 
 ```
 
 
 ```{r echo=FALSE, message=FALSE}
-by(WineQualityWhites$chlorides, WineQualityWhites$quality.r, summary)
-ggplot(WineQualityWhites, aes(x = quality.r, y = chlorides)) +
-  geom_boxplot() +
-  coord_cartesian(ylim = c(0, 0.075))
+by(WineQualityWhites$chlorides, factor(WineQualityWhites$quality), summary)
+ggplot(WineQualityWhites, aes(x = factor(quality), y = chlorides)) +
+  geom_jitter(alpha = 0.1) +
+  geom_boxplot(alpha = 0.5, size = 0.5) +
+  coord_cartesian(ylim = c(0, 0.101)) +
+  theme_gray()
 ```
 
 
@@ -272,20 +289,27 @@ quality 与alcohol浓度有较强相关
 
 ```{r echo=FALSE, warning=FALSE, Multivariate_Plots}
 
-ggplot(WineQualityWhites, aes(x = alcohol, y = density, color = quality.r)) +
-  geom_point(size = 1.5) +
-  ylim(min(WineQualityWhites$density), quantile(WineQualityWhites$density, .99)) +
-  scale_color_brewer(type = "qual")
+ggplot(WineQualityWhites, aes(x = alcohol, y = density, color = factor(quality))) +
+  geom_jitter(alpha = 0.2) +
+  ylim(0.985, 1.005) +
+  scale_color_brewer(palette = 18) +
+  geom_smooth(method = "lm", se = FALSE, size = 1) +
+  labs(x = "Alcohol", y = "Density") +
+  ggtitle("Density VS Alcohol VS Quality") +
+  theme_gray()
 ```
 
 上图是density-alcohol使用quality着色的多变量图， density与alcohol负相关，也能看到较高品质的酒分布于图的右下角，即alcohol较大，density较小的区域
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
-ggplot(WineQualityWhites, aes(residual.sugar, density, color = quality.r)) +
-  geom_point() +
+ggplot(WineQualityWhites, aes(residual.sugar, density, color = factor(quality))) +
+  geom_jitter(alpha = 0.3) +
   xlim(0, quantile(WineQualityWhites$residual.sugar, .99)) +
-  ylim(min(WineQualityWhites$density), quantile(WineQualityWhites$density, .99)) +
-  scale_color_brewer(type = "qual")
+  ylim(0.985, 1.005) +
+  geom_smooth(method = "lm", se = FALSE, size = 1) +
+  scale_color_brewer(palette = 18) +
+  labs(x = "Residual Sugar", y = "Density") +
+  ggtitle("Density VS Residual Sugar VS Quality")
 
 ```
 
@@ -293,10 +317,13 @@ residual.sugar 与 density 相关， 而density越低，quality越高
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 
-ggplot(WineQualityWhites, aes(total.sulfur.dioxide, density, color = quality.r)) +
-  geom_point() +
-  ylim(min(WineQualityWhites$density), quantile(WineQualityWhites$density, .99)) +
-  scale_color_brewer(type = "qual")
+ggplot(WineQualityWhites, aes(total.sulfur.dioxide, density, color = factor(quality))) +
+  geom_jitter(alpha = 0.3) +
+  geom_smooth(method = "lm", se = FALSE, size = 1) +
+  ylim(0.985, 1.005) +
+  scale_color_brewer(palette = 18) +
+  labs(x = "Total sulfur dioxide", y = "Density") +
+  ggtitle("Density VS Total sulfur dioxide VS Quality")
 ```
 
 
@@ -330,13 +357,14 @@ ggplot(WineQualityWhites, aes(quality, fill = I("#4169E1"))) +
 ### Plot Two
 
 ```{r echo=FALSE, Plot_Two}
-ggplot(WineQualityWhites, aes(quality.r, alcohol)) +
-  geom_boxplot() +
-  ggtitle("Quality vs alcohol")
+ggplot(WineQualityWhites, aes(factor(quality), alcohol)) +
+  geom_boxplot(alpha = 0.5, size = 0.75) +
+  geom_jitter(alpha = 0.1) +
+  ggtitle("Quality vs alcohol") +
+  labs(x = "Quality", y = "Alcohol") +
+  theme_gray()
 
-ggplot(WineQualityWhites, aes(alcohol, quality.r)) +
-  geom_point(alpha = 0.1, position = "jitter") +
-  ggtitle("Qulity vs alcohol")
+
 ```
 
 ### Description Two
@@ -346,12 +374,14 @@ quality得分高的白葡萄酒的alcohol浓度都较高
 ### Plot Three
 
 ```{r echo=FALSE,message=FALSE,warning=FALSE,Plot_Three}
-ggplot(WineQualityWhites, aes(alcohol, density, color = quality.r)) +
-  geom_point() +
-  ylim(min(WineQualityWhites$density), quantile(WineQualityWhites$density,.99)) +
-  scale_color_brewer(type = "qual") +
-  ggtitle("Density by density and quality")
-
+ggplot(WineQualityWhites, aes(x = alcohol, y = density, color = factor(quality))) +
+  geom_jitter(alpha = 0.2) +
+  ylim(0.985, 1.005) +
+  scale_color_brewer(palette = 18) +
+  geom_smooth(method = "lm", se = FALSE, size = 1) +
+  labs(x = "Alcohol", y = "Density") +
+  ggtitle("Density VS Alcohol VS Quality") +
+  theme_gray()
 ```
 
 ### Description Three
