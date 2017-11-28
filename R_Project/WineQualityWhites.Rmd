@@ -49,7 +49,7 @@ summary(WineQualityWhites)
 table(WineQualityWhites$quality)
 
 ggplot(WineQualityWhites, aes(quality)) +
-  geom_histogram(binwidth = 1,fill = "#0000CD") +
+  geom_histogram(binwidth = 1,fill = "#0000 CD") +
   ggtitle("Quality")
 
 ```
