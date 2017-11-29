@@ -12,5 +12,6 @@ print(clf.predict([[-0.8, -1]]))
 clf_pf = GaussianNB()
 clf_pf.partial_fit(X, Y, np.unique(Y))
 print(clf_pf.predict([[-0.8, -1]]))
+print(clf.score([[-0.8, -1],[-2, -1.1]], [1, 5]))
 
 
