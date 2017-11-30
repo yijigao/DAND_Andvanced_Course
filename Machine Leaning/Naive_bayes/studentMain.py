@@ -31,7 +31,7 @@ clf = classify(features_train, labels_train)
 
 ### draw the decision boundary with the text points overlaid
 prettyPicture(clf, features_test, labels_test)
-#output_image("test.png", "png", open("test.png", "rb").read())
+output_image("test.png", "png", open("test.png", "rb").read())
 print(submitAccuracy())
 
 
