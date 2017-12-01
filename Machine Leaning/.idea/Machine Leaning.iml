@@ -5,6 +5,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Naive_bayes" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Mini_Project/ud120-projects/tools" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/SVM" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Decision Trees" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
