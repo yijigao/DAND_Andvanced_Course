@@ -23,10 +23,13 @@ features_train, labels_train, features_test, labels_test = makeTerrainData()
 #acc_min_samples_split_2 = accuracy_score(clf_min_sample_split_2.predict(features_test), labels_test)
 #acc_min_samples_split_50 = accuracy_score(clf_min_sample_split_50.predict(features_test), labels_test)
 clf = classify(features_train, labels_train)
-acc = accuracy_score(clf.predict(features_test), labels_test)
+pred = clf.predict(features_test)
+acc = accuracy_score(pred, labels_test)
+print("acc 1: ", round(acc, 3))
 def submitAccuracies():
-	return {"acc": round(acc, 3)}
+	return "acc" , acc
 print(submitAccuracies())
+print("acc 2: ", round(acc, 3))
 # grader code, do not modify below this line
 # prettyPicture(clf, features_test, labels_test)
 # output_image("test.png", "png", open("test.png", "rb").read())

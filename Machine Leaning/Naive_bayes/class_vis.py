@@ -18,7 +18,7 @@ import numpy as np
 # import matplotlib.pyplot as plt
 # plt.ioff()
 
-def prettyPicture(clf, X_test, y_test):
+def prettyPicture(name, clf, X_test, y_test):
     x_min = 0.0; x_max = 1.0
     y_min = 0.0; y_max = 1.0
 
@@ -46,8 +46,8 @@ def prettyPicture(clf, X_test, y_test):
     plt.legend()
     plt.xlabel("bumpiness")
     plt.ylabel("grade")
+    plt.savefig(f"{name}.png")
 
-    plt.savefig("test.png")
 
 
 import base64
