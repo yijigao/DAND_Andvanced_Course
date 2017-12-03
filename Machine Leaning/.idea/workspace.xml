@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="fdc74788-82ac-4208-b4f2-8d741c968188" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mini_Project/ud120-projects/datasets_questions/explore_enron_data.py" afterPath="$PROJECT_DIR$/Mini_Project/ud120-projects/datasets_questions/explore_enron_data.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mini_Project/ud120-projects/tools/feature_format.py" afterPath="$PROJECT_DIR$/Mini_Project/ud120-projects/tools/feature_format.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -40,8 +38,8 @@
       <file leaf-file-name="explore_enron_data.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Mini_Project/ud120-projects/datasets_questions/explore_enron_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="94" column="29" lean-forward="true" selection-start-line="94" selection-start-column="29" selection-end-line="94" selection-end-column="29" />
+            <state relative-caret-position="367">
+              <caret line="104" column="0" lean-forward="true" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
               <folding>
                 <element signature="e#503#516#0" expanded="true" />
               </folding>
@@ -419,7 +417,14 @@
       <option name="project" value="LOCAL" />
       <updated>1512287240278</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="explore enron data">
+      <created>1512299683825</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1512299683825</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -462,7 +467,8 @@
     <MESSAGE value="Decision Tree" />
     <MESSAGE value="choose your own" />
     <MESSAGE value="datasets" />
-    <option name="LAST_COMMIT_MESSAGE" value="datasets" />
+    <MESSAGE value="explore enron data" />
+    <option name="LAST_COMMIT_MESSAGE" value="explore enron data" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -795,8 +801,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Mini_Project/ud120-projects/datasets_questions/explore_enron_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="94" column="29" lean-forward="true" selection-start-line="94" selection-start-column="29" selection-end-line="94" selection-end-column="29" />
+        <state relative-caret-position="367">
+          <caret line="104" column="0" lean-forward="true" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
           <folding>
             <element signature="e#503#516#0" expanded="true" />
           </folding>
