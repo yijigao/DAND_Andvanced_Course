@@ -8,6 +8,8 @@
       <sourceFolder url="file://$MODULE_DIR$/Decision Trees" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Mini_Project/ud120-projects/final_project" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Regression" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Outlier" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Mini_Project/ud120-projects/outliers" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

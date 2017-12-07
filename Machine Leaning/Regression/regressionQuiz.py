@@ -13,7 +13,7 @@ reg.fit(ages_train, net_worths_train)
 # get My net worth (I'm 25)
 # sklearn predictions are returned in an array, so you'll want to index into
 # the output to get what you want, e.g. net_worth = predict([[25]])[0][0]
-My_net_worth = reg.predict(25)[0][0]
+My_net_worth = reg.predict(25)
 print("My_net_worth: ", My_net_worth)
 
 # get the slope
