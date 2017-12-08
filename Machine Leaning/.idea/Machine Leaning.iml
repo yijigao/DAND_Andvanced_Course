@@ -11,6 +11,8 @@
       <sourceFolder url="file://$MODULE_DIR$/Outlier" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Mini_Project/ud120-projects/outliers" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Clusterins" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Mini_Project/ud120-projects/text_learning" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Mini_Project/ud120-projects" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
