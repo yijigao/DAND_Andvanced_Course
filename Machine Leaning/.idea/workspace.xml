@@ -5,11 +5,11 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mini_Project/ud120-projects" afterPath="$PROJECT_DIR$/Mini_Project/ud120-projects" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Machine Leaning.iml" afterPath="$PROJECT_DIR$/.idea/Machine Leaning.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mini_Project/ud120-projects/k_means/k_means_cluster.py" afterPath="$PROJECT_DIR$/Mini_Project/ud120-projects/k_means/k_means_cluster.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mini_Project/ud120-projects/outliers/enron_outliers.py" afterPath="$PROJECT_DIR$/Mini_Project/ud120-projects/outliers/enron_outliers.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mini_Project/ud120-projects/outliers/outlier_cleaner.py" afterPath="$PROJECT_DIR$/Mini_Project/ud120-projects/outliers/outlier_cleaner.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mini_Project/ud120-projects/outliers/outlier_removal_regression.py" afterPath="$PROJECT_DIR$/Mini_Project/ud120-projects/outliers/outlier_removal_regression.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mini_Project/ud120-projects/regression/finance_regression.py" afterPath="$PROJECT_DIR$/Mini_Project/ud120-projects/regression/finance_regression.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Regression/regressionQuiz.py" afterPath="$PROJECT_DIR$/Regression/regressionQuiz.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,7 +23,7 @@
     <SUITE FILE_PATH="coverage/Machine_Leaning$classify.coverage" NAME="classify Coverage Results" MODIFIED="1511942124835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Naive_bayes" />
     <SUITE FILE_PATH="coverage/Machine_Leaning$regressionQuiz.coverage" NAME="regressionQuiz Coverage Results" MODIFIED="1512654785293" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Regression" />
     <SUITE FILE_PATH="coverage/Machine_Leaning$Example_svm.coverage" NAME="Example_svm Coverage Results" MODIFIED="1512027473899" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SVM" />
-    <SUITE FILE_PATH="coverage/Machine_Leaning$enron_outliers.coverage" NAME="enron_outliers Coverage Results" MODIFIED="1512660195269" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Mini_Project/ud120-projects/outliers" />
+    <SUITE FILE_PATH="coverage/Machine_Leaning$enron_outliers.coverage" NAME="enron_outliers Coverage Results" MODIFIED="1512696292664" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Mini_Project/ud120-projects/outliers" />
     <SUITE FILE_PATH="coverage/Machine_Leaning$linear_model_example.coverage" NAME="linear_model_example Coverage Results" MODIFIED="1512482109426" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Regression" />
     <SUITE FILE_PATH="coverage/Machine_Leaning$outlier_removal_regression.coverage" NAME="outlier_removal_regression Coverage Results" MODIFIED="1512659997742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Mini_Project/ud120-projects/outliers" />
     <SUITE FILE_PATH="coverage/Machine_Leaning$studentCode.coverage" NAME="studentCode Coverage Results" MODIFIED="1511941532629" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Naive_bayes" />
@@ -37,6 +37,7 @@
     <SUITE FILE_PATH="coverage/Machine_Leaning$startup.coverage" NAME="startup Coverage Results" MODIFIED="1511951160501" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Mini_Project/ud120-projects/tools" />
     <SUITE FILE_PATH="coverage/Machine_Leaning$test_your_algotithm.coverage" NAME="test_your_algotithm Coverage Results" MODIFIED="1512210771448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Choose your own algorithm" />
     <SUITE FILE_PATH="coverage/Machine_Leaning$SVM_code.coverage" NAME="SVM_code Coverage Results" MODIFIED="1512028247011" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SVM" />
+    <SUITE FILE_PATH="coverage/Machine_Leaning$k_means_cluster.coverage" NAME="k_means_cluster Coverage Results" MODIFIED="1512702273154" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Mini_Project/ud120-projects/k_means" />
     <SUITE FILE_PATH="coverage/Machine_Leaning$Examples.coverage" NAME="Examples Coverage Results" MODIFIED="1511941787010" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Naive_bayes" />
     <SUITE FILE_PATH="coverage/Machine_Leaning$finance_regression.coverage" NAME="finance_regression Coverage Results" MODIFIED="1512572817363" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Mini_Project/ud120-projects/regression" />
     <SUITE FILE_PATH="coverage/Machine_Leaning$outlier_cleaner.coverage" NAME="outlier_cleaner Coverage Results" MODIFIED="1512656505487" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Mini_Project/ud120-projects/outliers" />
@@ -52,7 +53,7 @@
         <entry file="file://$PROJECT_DIR$/Mini_Project/ud120-projects/outliers/outlier_cleaner.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="334">
-              <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -61,7 +62,7 @@
       <file leaf-file-name="outlier_removal_regression.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Mini_Project/ud120-projects/outliers/outlier_removal_regression.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
+            <state relative-caret-position="544">
               <caret line="76" column="17" lean-forward="false" selection-start-line="76" selection-start-column="17" selection-end-line="76" selection-end-column="17" />
               <folding>
                 <element signature="e#19#32#0" expanded="true" />
@@ -70,14 +71,36 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="enron_outliers.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="enron_outliers.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Mini_Project/ud120-projects/outliers/enron_outliers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <state relative-caret-position="331">
+              <caret line="23" column="28" lean-forward="false" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
               <folding>
                 <element signature="e#19#32#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="k_means_cluster.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Mini_Project/ud120-projects/k_means/k_means_cluster.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="934">
+              <caret line="70" column="23" lean-forward="true" selection-start-line="70" selection-start-column="23" selection-end-line="70" selection-end-column="23" />
+              <folding>
+                <element signature="e#85#98#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="feature_format.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Mini_Project/ud120-projects/tools/feature_format.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="454">
+              <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -134,6 +157,7 @@
         <option value="$PROJECT_DIR$/Mini_Project/ud120-projects/outliers/outlier_cleaner.py" />
         <option value="$PROJECT_DIR$/Mini_Project/ud120-projects/outliers/outlier_removal_regression.py" />
         <option value="$PROJECT_DIR$/Mini_Project/ud120-projects/outliers/enron_outliers.py" />
+        <option value="$PROJECT_DIR$/Mini_Project/ud120-projects/k_means/k_means_cluster.py" />
       </list>
     </option>
   </component>
@@ -165,8 +189,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -190,26 +212,14 @@
               <item name="Machine Leaning" type="462c0819:PsiDirectoryNode" />
               <item name="Mini_Project" type="462c0819:PsiDirectoryNode" />
               <item name="ud120-projects" type="462c0819:PsiDirectoryNode" />
-              <item name="final_project" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Machine Leaning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Machine Leaning" type="462c0819:PsiDirectoryNode" />
-              <item name="Mini_Project" type="462c0819:PsiDirectoryNode" />
-              <item name="ud120-projects" type="462c0819:PsiDirectoryNode" />
-              <item name="outliers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Machine Leaning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Machine Leaning" type="462c0819:PsiDirectoryNode" />
-              <item name="Mini_Project" type="462c0819:PsiDirectoryNode" />
-              <item name="ud120-projects" type="462c0819:PsiDirectoryNode" />
-              <item name="svm" type="462c0819:PsiDirectoryNode" />
+              <item name="k_means" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -238,7 +248,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.enron_outliers">
+  <component name="RunManager" selected="Python.k_means_cluster">
     <configuration name="enron_outliers" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -257,20 +267,20 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="finance_regression" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="k_means_cluster" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Mini_Project/ud120-projects/regression" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Mini_Project/ud120-projects/k_means" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Machine Leaning" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Mini_Project/ud120-projects/regression/finance_regression.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Mini_Project/ud120-projects/k_means/k_means_cluster.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -331,18 +341,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.regressionQuiz" />
-      <item index="1" class="java.lang.String" itemvalue="Python.finance_regression" />
-      <item index="2" class="java.lang.String" itemvalue="Python.outlier_removal_regression" />
-      <item index="3" class="java.lang.String" itemvalue="Python.outlier_cleaner" />
-      <item index="4" class="java.lang.String" itemvalue="Python.enron_outliers" />
+      <item index="1" class="java.lang.String" itemvalue="Python.outlier_removal_regression" />
+      <item index="2" class="java.lang.String" itemvalue="Python.outlier_cleaner" />
+      <item index="3" class="java.lang.String" itemvalue="Python.enron_outliers" />
+      <item index="4" class="java.lang.String" itemvalue="Python.k_means_cluster" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.enron_outliers" />
-        <item index="1" class="java.lang.String" itemvalue="Python.outlier_removal_regression" />
-        <item index="2" class="java.lang.String" itemvalue="Python.outlier_cleaner" />
-        <item index="3" class="java.lang.String" itemvalue="Python.regressionQuiz" />
-        <item index="4" class="java.lang.String" itemvalue="Python.finance_regression" />
+        <item index="0" class="java.lang.String" itemvalue="Python.k_means_cluster" />
+        <item index="1" class="java.lang.String" itemvalue="Python.enron_outliers" />
+        <item index="2" class="java.lang.String" itemvalue="Python.outlier_removal_regression" />
+        <item index="3" class="java.lang.String" itemvalue="Python.outlier_cleaner" />
+        <item index="4" class="java.lang.String" itemvalue="Python.regressionQuiz" />
       </list>
     </recent_temporary>
   </component>
@@ -470,6 +480,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1911" y="-9" width="1938" height="1048" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16197917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -477,7 +488,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33774835" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33774835" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -518,13 +529,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/SVM/SVM_code.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="727">
-          <caret line="25" column="10" lean-forward="false" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SVM/SVM.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -666,13 +670,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Mini_Project/ud120-projects/tools/feature_format.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="80" column="28" lean-forward="false" selection-start-line="80" selection-start-column="28" selection-end-line="80" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Mini_Project/ud120-projects/datasets_questions/explore_enron_data.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="670">
@@ -717,9 +714,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="460">
           <caret line="91" column="12" lean-forward="true" selection-start-line="91" selection-start-column="12" selection-end-line="91" selection-end-column="12" />
-          <folding>
-            <element signature="e#373#383#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -727,7 +721,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="3" column="21" lean-forward="false" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -743,9 +736,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
           <caret line="20" column="24" lean-forward="false" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#12#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -753,7 +743,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="43" lean-forward="false" selection-start-line="0" selection-start-column="43" selection-end-line="0" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -761,9 +750,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="67">
           <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#12#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -771,9 +757,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="780">
           <caret line="26" column="28" lean-forward="true" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#12#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -781,7 +764,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1466">
           <caret line="38" column="17" lean-forward="true" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -789,9 +771,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4">
           <caret line="52" column="19" lean-forward="false" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="19" />
-          <folding>
-            <element signature="e#19#32#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -799,7 +778,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="511">
           <caret line="85" column="31" lean-forward="false" selection-start-line="85" selection-start-column="23" selection-end-line="85" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -807,9 +785,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="36" column="33" lean-forward="false" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
-          <folding>
-            <element signature="e#234#244#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -817,9 +792,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="31" column="11" lean-forward="false" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
-          <folding>
-            <element signature="e#247#257#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -827,7 +799,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="454">
           <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="57" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -839,17 +810,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Mini_Project/ud120-projects/outliers/enron_outliers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="23" column="28" lean-forward="false" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+          <folding>
+            <element signature="e#19#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Mini_Project/ud120-projects/outliers/outlier_cleaner.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="334">
-          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Mini_Project/ud120-projects/outliers/outlier_removal_regression.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
+        <state relative-caret-position="544">
           <caret line="76" column="17" lean-forward="false" selection-start-line="76" selection-start-column="17" selection-end-line="76" selection-end-column="17" />
           <folding>
             <element signature="e#19#32#0" expanded="true" />
@@ -857,12 +838,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Mini_Project/ud120-projects/outliers/enron_outliers.py">
+    <entry file="file://$PROJECT_DIR$/Mini_Project/ud120-projects/tools/feature_format.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        <state relative-caret-position="454">
+          <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mini_Project/ud120-projects/k_means/k_means_cluster.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="934">
+          <caret line="70" column="23" lean-forward="true" selection-start-line="70" selection-start-column="23" selection-end-line="70" selection-end-column="23" />
           <folding>
-            <element signature="e#19#32#0" expanded="true" />
+            <element signature="e#85#98#0" expanded="true" />
           </folding>
         </state>
       </provider>
