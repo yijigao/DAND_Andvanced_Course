@@ -1,22 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fdc74788-82ac-4208-b4f2-8d741c968188" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Feature scale/MinMaxScaler_example.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Feature scale/featuter_scale_quiz.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Text learning/Countvectorizer_example.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Text learning/remove_stop_words_NLK.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mini_Project/ud120-projects" afterPath="$PROJECT_DIR$/Mini_Project/ud120-projects" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Machine Leaning.iml" afterPath="$PROJECT_DIR$/.idea/Machine Leaning.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mini_Project/ud120-projects/k_means/k_means_cluster.py" afterPath="$PROJECT_DIR$/Mini_Project/ud120-projects/k_means/k_means_cluster.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mini_Project/ud120-projects/outliers/enron_outliers.py" afterPath="$PROJECT_DIR$/Mini_Project/ud120-projects/outliers/enron_outliers.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mini_Project/ud120-projects/outliers/outlier_cleaner.py" afterPath="$PROJECT_DIR$/Mini_Project/ud120-projects/outliers/outlier_cleaner.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mini_Project/ud120-projects/outliers/outlier_removal_regression.py" afterPath="$PROJECT_DIR$/Mini_Project/ud120-projects/outliers/outlier_removal_regression.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mini_Project/ud120-projects/regression/finance_regression.py" afterPath="$PROJECT_DIR$/Mini_Project/ud120-projects/regression/finance_regression.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mini_Project/ud120-projects/text_learning/test_email.txt" afterPath="$PROJECT_DIR$/Mini_Project/ud120-projects/text_learning/test_email.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mini_Project/ud120-projects/text_learning/vectorize_text.py" afterPath="$PROJECT_DIR$/Mini_Project/ud120-projects/text_learning/vectorize_text.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mini_Project/ud120-projects/tools/parse_out_email_text.py" afterPath="$PROJECT_DIR$/Mini_Project/ud120-projects/tools/parse_out_email_text.py" />
+    <list default="true" id="599f72e1-acaa-4cb7-b04f-f4ba1a56b634" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/R_User_Library.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/other.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Feature selection/get_data.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Feature selection/studentCode.py" />
+      <change beforePath="$PROJECT_DIR$/.idea/Machine Leaning.iml" afterPath="$PROJECT_DIR$/.idea/Machine Leaning.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/yijig.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/Decision Trees/Example_DT.py" afterPath="$PROJECT_DIR$/Decision Trees/Example_DT.py" />
+      <change beforePath="$PROJECT_DIR$/Decision Trees/classifyDT.py" afterPath="$PROJECT_DIR$/Decision Trees/classifyDT.py" />
+      <change beforePath="$PROJECT_DIR$/Mini_Project/ud120-projects" afterPath="" />
+      <change beforePath="D:/Mini_Project/ud120-projects/feature_selection/find_signature.py" afterPath="D:/Mini_Project/ud120-projects/feature_selection/find_signature.py" />
+      <change beforePath="D:/Mini_Project/ud120-projects/k_means/k_means_cluster.py" afterPath="D:/Mini_Project/ud120-projects/k_means/k_means_cluster.py" />
+      <change beforePath="D:/Mini_Project/ud120-projects/outliers/enron_outliers.py" afterPath="D:/Mini_Project/ud120-projects/outliers/enron_outliers.py" />
+      <change beforePath="D:/Mini_Project/ud120-projects/outliers/outlier_cleaner.py" afterPath="D:/Mini_Project/ud120-projects/outliers/outlier_cleaner.py" />
+      <change beforePath="D:/Mini_Project/ud120-projects/outliers/outlier_removal_regression.py" afterPath="D:/Mini_Project/ud120-projects/outliers/outlier_removal_regression.py" />
+      <change beforePath="D:/Mini_Project/ud120-projects/pca/eigenfaces.py" afterPath="D:/Mini_Project/ud120-projects/pca/eigenfaces.py" />
+      <change beforePath="D:/Mini_Project/ud120-projects/regression/finance_regression.py" afterPath="D:/Mini_Project/ud120-projects/regression/finance_regression.py" />
+      <change beforePath="D:/Mini_Project/ud120-projects/svm/svm_author_id.py" afterPath="D:/Mini_Project/ud120-projects/svm/svm_author_id.py" />
+      <change beforePath="D:/Mini_Project/ud120-projects/text_learning/test_email.txt" afterPath="D:/Mini_Project/ud120-projects/text_learning/test_email.txt" />
+      <change beforePath="D:/Mini_Project/ud120-projects/text_learning/vectorize_text.py" afterPath="D:/Mini_Project/ud120-projects/text_learning/vectorize_text.py" />
+      <change beforePath="D:/Mini_Project/ud120-projects/tools/convert_to_unix.py" afterPath="D:/Mini_Project/ud120-projects/tools/convert_to_unix.py" />
+      <change beforePath="D:/Mini_Project/ud120-projects/tools/dos2unix.py" afterPath="D:/Mini_Project/ud120-projects/tools/dos2unix.py" />
+      <change beforePath="D:/Mini_Project/ud120-projects/tools/email_authors.pkl" afterPath="D:/Mini_Project/ud120-projects/tools/email_authors.pkl" />
+      <change beforePath="D:/Mini_Project/ud120-projects/tools/email_preprocess.py" afterPath="D:/Mini_Project/ud120-projects/tools/email_preprocess.py" />
+      <change beforePath="D:/Mini_Project/ud120-projects/tools/feature_format.py" afterPath="D:/Mini_Project/ud120-projects/tools/feature_format.py" />
+      <change beforePath="D:/Mini_Project/ud120-projects/tools/parse_out_email_text.py" afterPath="D:/Mini_Project/ud120-projects/tools/parse_out_email_text.py" />
+      <change beforePath="D:/Mini_Project/ud120-projects/tools/python2_lesson06_keys.pkl" afterPath="D:/Mini_Project/ud120-projects/tools/python2_lesson06_keys.pkl" />
+      <change beforePath="D:/Mini_Project/ud120-projects/tools/python2_lesson13_keys.pkl" afterPath="D:/Mini_Project/ud120-projects/tools/python2_lesson13_keys.pkl" />
+      <change beforePath="D:/Mini_Project/ud120-projects/tools/python2_lesson14_keys.pkl" afterPath="D:/Mini_Project/ud120-projects/tools/python2_lesson14_keys.pkl" />
+      <change beforePath="D:/Mini_Project/ud120-projects/tools/startup.py" afterPath="D:/Mini_Project/ud120-projects/tools/startup.py" />
+      <change beforePath="D:/Mini_Project/ud120-projects/tools/word_data.pkl" afterPath="D:/Mini_Project/ud120-projects/tools/word_data.pkl" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,146 +47,43 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Machine_Leaning$example_nearest_neighbors.coverage" NAME="example_nearest_neighbors Coverage Results" MODIFIED="1512202102387" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Choose your own algorithm" />
-    <SUITE FILE_PATH="coverage/Machine_Leaning$classify.coverage" NAME="classify Coverage Results" MODIFIED="1511942124835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Naive_bayes" />
-    <SUITE FILE_PATH="coverage/Machine_Leaning$regressionQuiz.coverage" NAME="regressionQuiz Coverage Results" MODIFIED="1512654785293" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Regression" />
-    <SUITE FILE_PATH="coverage/Machine_Leaning$Example_svm.coverage" NAME="Example_svm Coverage Results" MODIFIED="1512027473899" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SVM" />
-    <SUITE FILE_PATH="coverage/Machine_Leaning$enron_outliers.coverage" NAME="enron_outliers Coverage Results" MODIFIED="1512696292664" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Mini_Project/ud120-projects/outliers" />
-    <SUITE FILE_PATH="coverage/Machine_Leaning$linear_model_example.coverage" NAME="linear_model_example Coverage Results" MODIFIED="1512482109426" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Regression" />
-    <SUITE FILE_PATH="coverage/Machine_Leaning$featuter_scale_quiz.coverage" NAME="featuter_scale_quiz Coverage Results" MODIFIED="1512718343196" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Feature scale" />
-    <SUITE FILE_PATH="coverage/Machine_Leaning$outlier_removal_regression.coverage" NAME="outlier_removal_regression Coverage Results" MODIFIED="1512659997742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Mini_Project/ud120-projects/outliers" />
-    <SUITE FILE_PATH="coverage/Machine_Leaning$studentCode.coverage" NAME="studentCode Coverage Results" MODIFIED="1511941532629" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Naive_bayes" />
-    <SUITE FILE_PATH="coverage/Machine_Leaning$dt_author_id.coverage" NAME="dt_author_id Coverage Results" MODIFIED="1512117700791" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Mini_Project/ud120-projects/decision_tree" />
-    <SUITE FILE_PATH="coverage/Machine_Leaning$classifier_comparison.coverage" NAME="classifier_comparison Coverage Results" MODIFIED="1512205402567" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Choose your own algorithm" />
-    <SUITE FILE_PATH="coverage/Machine_Leaning$class_vis.coverage" NAME="class_vis Coverage Results" MODIFIED="1512030252646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Naive_bayes" />
-    <SUITE FILE_PATH="coverage/Machine_Leaning$MinMaxScaler_example.coverage" NAME="MinMaxScaler_example Coverage Results" MODIFIED="1512719166029" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Feature scale" />
-    <SUITE FILE_PATH="coverage/Machine_Leaning$dos2unix.coverage" NAME="dos2unix Coverage Results" MODIFIED="1512025068634" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Mini_Project/ud120-projects/tools" />
-    <SUITE FILE_PATH="coverage/Machine_Leaning$nb_author_id.coverage" NAME="nb_author_id Coverage Results" MODIFIED="1512025828552" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Mini_Project/ud120-projects/naive_bayes" />
-    <SUITE FILE_PATH="coverage/Machine_Leaning$Example_DT.coverage" NAME="Example_DT Coverage Results" MODIFIED="1512116343628" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Decision Trees" />
-    <SUITE FILE_PATH="coverage/Machine_Leaning$remove_stop_words_NLK.coverage" NAME="remove_stop_words_NLK Coverage Results" MODIFIED="1512731639049" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Text learning" />
-    <SUITE FILE_PATH="coverage/Machine_Leaning$svm_author_id.coverage" NAME="svm_author_id Coverage Results" MODIFIED="1512034543102" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Mini_Project/ud120-projects/svm" />
-    <SUITE FILE_PATH="coverage/Machine_Leaning$Countvectorizer_example.coverage" NAME="Countvectorizer_example Coverage Results" MODIFIED="1512729402668" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Text learning" />
-    <SUITE FILE_PATH="coverage/Machine_Leaning$vectorize_text.coverage" NAME="vectorize_text Coverage Results" MODIFIED="1512742392126" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Mini_Project/ud120-projects/text_learning" />
-    <SUITE FILE_PATH="coverage/Machine_Leaning$startup.coverage" NAME="startup Coverage Results" MODIFIED="1511951160501" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Mini_Project/ud120-projects/tools" />
-    <SUITE FILE_PATH="coverage/Machine_Leaning$test_your_algotithm.coverage" NAME="test_your_algotithm Coverage Results" MODIFIED="1512210771448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Choose your own algorithm" />
-    <SUITE FILE_PATH="coverage/Machine_Leaning$SVM_code.coverage" NAME="SVM_code Coverage Results" MODIFIED="1512028247011" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SVM" />
-    <SUITE FILE_PATH="coverage/Machine_Leaning$k_means_cluster.coverage" NAME="k_means_cluster Coverage Results" MODIFIED="1512728005960" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Mini_Project/ud120-projects/k_means" />
-    <SUITE FILE_PATH="coverage/Machine_Leaning$Examples.coverage" NAME="Examples Coverage Results" MODIFIED="1511941787010" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Naive_bayes" />
-    <SUITE FILE_PATH="coverage/Machine_Leaning$finance_regression.coverage" NAME="finance_regression Coverage Results" MODIFIED="1512572817363" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Mini_Project/ud120-projects/regression" />
-    <SUITE FILE_PATH="coverage/Machine_Leaning$outlier_cleaner.coverage" NAME="outlier_cleaner Coverage Results" MODIFIED="1512656505487" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Mini_Project/ud120-projects/outliers" />
-    <SUITE FILE_PATH="coverage/Machine_Leaning$email_preprocess.coverage" NAME="email_preprocess Coverage Results" MODIFIED="1512023080543" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Mini_Project/ud120-projects/tools" />
-    <SUITE FILE_PATH="coverage/Machine_Leaning$prep_terrain_data.coverage" NAME="prep_terrain_data Coverage Results" MODIFIED="1512030618400" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Naive_bayes" />
-    <SUITE FILE_PATH="coverage/Machine_Leaning$explore_enron_data.coverage" NAME="explore_enron_data Coverage Results" MODIFIED="1512299611546" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Mini_Project/ud120-projects/datasets_questions" />
-    <SUITE FILE_PATH="coverage/Machine_Leaning$studentMain.coverage" NAME="studentMain Coverage Results" MODIFIED="1512484505149" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Regression" />
-    <SUITE FILE_PATH="coverage/Machine_Leaning$studentMain__1_.coverage" NAME="studentMain (1) Coverage Results" MODIFIED="1512201881405" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Decision Trees" />
-    <SUITE FILE_PATH="coverage/Machine_Leaning$parse_out_email_text.coverage" NAME="parse_out_email_text Coverage Results" MODIFIED="1512742285418" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Mini_Project/ud120-projects/tools" />
+    <SUITE FILE_PATH="coverage/Machine_Leaning$MinMaxScaler_example.coverage" NAME="MinMaxScaler_example Coverage Results" MODIFIED="1512819796366" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Feature scale" />
+    <SUITE FILE_PATH="coverage/Machine_Leaning$Countvectorizer_example.coverage" NAME="Countvectorizer_example Coverage Results" MODIFIED="1512825172608" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Text learning" />
+    <SUITE FILE_PATH="coverage/Machine_Leaning$find_signature.coverage" NAME="find_signature Coverage Results" MODIFIED="1512825351774" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/Mini_Project/ud120-projects/feature_selection" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="parse_out_email_text.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Mini_Project/ud120-projects/tools/parse_out_email_text.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="40" column="43" lean-forward="true" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
-              <folding>
-                <element signature="e#19#65#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="vectorize_text.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Mini_Project/ud120-projects/text_learning/vectorize_text.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="90" column="22" lean-forward="true" selection-start-line="90" selection-start-column="22" selection-end-line="90" selection-end-column="22" />
-              <folding>
-                <element signature="e#19#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="remove_stop_words_NLK.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Text learning/remove_stop_words_NLK.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf>
       <file leaf-file-name="Countvectorizer_example.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Text learning/Countvectorizer_example.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+            <state relative-caret-position="360">
+              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="find_signature.py" pinned="false" current-in-tab="true">
+        <entry file="file://D:/Mini_Project/ud120-projects/feature_selection/find_signature.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+              <folding>
+                <element signature="e#19#32#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Python Script" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Mini_Project/ud120-projects" />
+    <option name="RECENT_GIT_ROOT_PATH" value="D:/Mini_Project/ud120-projects" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Naive_bayes/prep_terrain_data.py" />
-        <option value="$PROJECT_DIR$/Naive_bayes/__init__.py" />
-        <option value="$PROJECT_DIR$/Naive_bayes/ClassifyNB.py" />
-        <option value="$PROJECT_DIR$/Naive_bayes/studentCode.py" />
-        <option value="$PROJECT_DIR$/Naive_bayes/Examples.py" />
-        <option value="$PROJECT_DIR$/Mini_Project/ud120-projects/tools/startup.py" />
-        <option value="$PROJECT_DIR$/Mini_Project/ud120-projects/tools/dos2unix.py" />
-        <option value="$PROJECT_DIR$/Mini_Project/ud120-projects/naive_bayes/nb_author_id.py" />
-        <option value="$PROJECT_DIR$/SVM/Example_svm.py" />
-        <option value="$PROJECT_DIR$/SVM/SVM_code.py" />
-        <option value="$PROJECT_DIR$/Naive_bayes/studentMain.py" />
-        <option value="$PROJECT_DIR$/Naive_bayes/classify.py" />
-        <option value="$PROJECT_DIR$/SVM/SVM.md" />
-        <option value="$PROJECT_DIR$/Mini_Project/ud120-projects/svm/svm_author_id.py" />
-        <option value="$PROJECT_DIR$/Decision Trees/Decision_Trees.md" />
-        <option value="$PROJECT_DIR$/Decision Trees/classifyDT.py" />
-        <option value="$PROJECT_DIR$/Decision Trees/Example_DT.py" />
-        <option value="$PROJECT_DIR$/Mini_Project/ud120-projects/tools/email_preprocess.py" />
-        <option value="$PROJECT_DIR$/Mini_Project/ud120-projects/decision_tree/dt_author_id.py" />
-        <option value="$PROJECT_DIR$/Mini_Project/ud120-projects/choose_your_own/class_vis.py" />
-        <option value="$PROJECT_DIR$/Decision Trees/studentMain.py" />
-        <option value="$PROJECT_DIR$/Choose your own algorithm/example_nearest_neighbors.py" />
-        <option value="$PROJECT_DIR$/Choose your own algorithm/classifier_comparison.py" />
-        <option value="$PROJECT_DIR$/Naive_bayes/class_vis.py" />
-        <option value="$PROJECT_DIR$/Choose your own algorithm/test_your_algotithm.py" />
-        <option value="$PROJECT_DIR$/Mini_Project/ud120-projects/tools/convert_to_unix.py" />
-        <option value="$PROJECT_DIR$/Mini_Project/ud120-projects/tools/feature_format.py" />
-        <option value="$PROJECT_DIR$/Mini_Project/ud120-projects/datasets_questions/explore_enron_data.py" />
-        <option value="$PROJECT_DIR$/Regression/linear_model_example.py" />
-        <option value="$PROJECT_DIR$/Regression/studentRegression.py" />
-        <option value="$PROJECT_DIR$/Regression/ages_net_worths.py" />
-        <option value="$PROJECT_DIR$/Regression/studentMain.py" />
-        <option value="$PROJECT_DIR$/Mini_Project/ud120-projects/regression/finance_regression.py" />
-        <option value="$PROJECT_DIR$/Regression/regressionQuiz.py" />
-        <option value="$PROJECT_DIR$/Mini_Project/ud120-projects/outliers/outlier_cleaner.py" />
-        <option value="$PROJECT_DIR$/Mini_Project/ud120-projects/outliers/outlier_removal_regression.py" />
-        <option value="$PROJECT_DIR$/Mini_Project/ud120-projects/outliers/enron_outliers.py" />
-        <option value="$PROJECT_DIR$/Feature scale/featuter_scale_quiz.py" />
-        <option value="$PROJECT_DIR$/Feature scale/MinMaxScaler_example.py" />
-        <option value="$PROJECT_DIR$/Mini_Project/ud120-projects/k_means/k_means_cluster.py" />
-        <option value="$PROJECT_DIR$/Text learning/Countvectorizer_example.py" />
-        <option value="$PROJECT_DIR$/Text learning/remove_stop_words_NLK.py" />
-        <option value="$PROJECT_DIR$/Mini_Project/ud120-projects/text_learning/test_email.txt" />
-        <option value="$PROJECT_DIR$/Mini_Project/ud120-projects/tools/parse_out_email_text.py" />
-        <option value="$PROJECT_DIR$/Mini_Project/ud120-projects/text_learning/vectorize_text.py" />
+        <option value="D:/Mini_Project/ud120-projects/feature_selection/find_signature.py" />
       </list>
     </option>
   </component>
@@ -176,10 +94,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="118" />
-    <option name="y" value="-25" />
-    <option name="width" value="1938" />
-    <option name="height" value="1048" />
+    <option name="x" value="354" />
+    <option name="y" value="-22" />
+    <option name="width" value="1400" />
+    <option name="height" value="990" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -197,57 +115,25 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="Machine Leaning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Machine Leaning" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Machine Leaning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Machine Leaning" type="462c0819:PsiDirectoryNode" />
-              <item name="Mini_Project" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Machine Leaning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Machine Leaning" type="462c0819:PsiDirectoryNode" />
-              <item name="Mini_Project" type="462c0819:PsiDirectoryNode" />
               <item name="ud120-projects" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Machine Leaning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Machine Leaning" type="462c0819:PsiDirectoryNode" />
-              <item name="Mini_Project" type="462c0819:PsiDirectoryNode" />
-              <item name="ud120-projects" type="462c0819:PsiDirectoryNode" />
-              <item name="text_learning" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Machine Leaning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Machine Leaning" type="462c0819:PsiDirectoryNode" />
-              <item name="Text learning" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-    <property name="node.js.path.for.package.stylelint" value="project" />
-    <property name="node.js.selected.package.stylelint" value="" />
-    <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.tslint" value="" />
-    <property name="last_opened_file_path" value="D:/DNND" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\DAND\Machine Leaning" />
-    </key>
+    <property name="last_opened_file_path" value="D:/Mini_Project/ud120-projects" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Python" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -261,7 +147,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.vectorize_text">
+  <component name="RunManager" selected="Python.find_signature">
     <configuration name="Countvectorizer_example" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -279,93 +165,56 @@
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="k_means_cluster" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="MinMaxScaler_example" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Mini_Project/ud120-projects/k_means" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Feature scale" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Machine Leaning" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Mini_Project/ud120-projects/k_means/k_means_cluster.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Feature scale/MinMaxScaler_example.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="parse_out_email_text" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="find_signature" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Mini_Project/ud120-projects/tools" />
+      <option name="WORKING_DIRECTORY" value="D:/Mini_Project/ud120-projects/feature_selection" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Machine Leaning" />
+      <module name="ud120-projects" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Mini_Project/ud120-projects/tools/parse_out_email_text.py" />
+      <option name="SCRIPT_NAME" value="D:/Mini_Project/ud120-projects/feature_selection/find_signature.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="remove_stop_words_NLK" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Text learning" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Machine Leaning" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Text learning/remove_stop_words_NLK.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="vectorize_text" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Mini_Project/ud120-projects/text_learning" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Machine Leaning" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Mini_Project/ud120-projects/text_learning/vectorize_text.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.k_means_cluster" />
+    <list size="3">
+      <item index="0" class="java.lang.String" itemvalue="Python.MinMaxScaler_example" />
       <item index="1" class="java.lang.String" itemvalue="Python.Countvectorizer_example" />
-      <item index="2" class="java.lang.String" itemvalue="Python.remove_stop_words_NLK" />
-      <item index="3" class="java.lang.String" itemvalue="Python.parse_out_email_text" />
-      <item index="4" class="java.lang.String" itemvalue="Python.vectorize_text" />
+      <item index="2" class="java.lang.String" itemvalue="Python.find_signature" />
     </list>
     <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.vectorize_text" />
-        <item index="1" class="java.lang.String" itemvalue="Python.parse_out_email_text" />
-        <item index="2" class="java.lang.String" itemvalue="Python.remove_stop_words_NLK" />
-        <item index="3" class="java.lang.String" itemvalue="Python.Countvectorizer_example" />
-        <item index="4" class="java.lang.String" itemvalue="Python.k_means_cluster" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Python.find_signature" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Countvectorizer_example" />
+        <item index="2" class="java.lang.String" itemvalue="Python.MinMaxScaler_example" />
       </list>
     </recent_temporary>
   </component>
@@ -377,141 +226,38 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="fdc74788-82ac-4208-b4f2-8d741c968188" name="Default" comment="" />
-      <created>1511867237736</created>
+      <changelist id="599f72e1-acaa-4cb7-b04f-f4ba1a56b634" name="Default" comment="" />
+      <created>1512819435291</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1511867237736</updated>
+      <updated>1512819435291</updated>
     </task>
-    <task id="LOCAL-00001" summary="Machine Learning">
-      <created>1511869502298</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1511869502298</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Machine Learning">
-      <created>1511869531817</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1511869531817</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Machine Learning">
-      <created>1511938344670</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1511938344670</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Machine Learning">
-      <created>1511939056102</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1511939056102</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Machine Learning">
-      <created>1511939136223</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1511939136223</updated>
-    </task>
-    <task id="LOCAL-00006" summary="accuracy">
-      <created>1511942278299</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1511942278299</updated>
-    </task>
-    <task id="LOCAL-00007" summary="mini project">
-      <created>1512025878281</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1512025878281</updated>
-    </task>
-    <task id="LOCAL-00008" summary="learning svm">
-      <created>1512036777719</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1512036777719</updated>
-    </task>
-    <task id="LOCAL-00009" summary="repairing some codes in python3">
-      <created>1512036863524</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1512036863524</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Decision Tree">
-      <created>1512117946697</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1512117946697</updated>
-    </task>
-    <task id="LOCAL-00011" summary="choose your own">
-      <created>1512123677947</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1512123677947</updated>
-    </task>
-    <task id="LOCAL-00012" summary="choose your own">
-      <created>1512210981439</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1512210981439</updated>
-    </task>
-    <task id="LOCAL-00013" summary="datasets">
-      <created>1512287240278</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1512287240278</updated>
-    </task>
-    <task id="LOCAL-00014" summary="explore enron data">
-      <created>1512299683825</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1512299683825</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Regression">
-      <created>1512485420342</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1512485420342</updated>
-    </task>
-    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16197917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33443707" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33774835" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30845225" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.128125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="R Packages" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="R Graphics" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -521,348 +267,69 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Machine Learning" />
-    <MESSAGE value="accuracy" />
-    <MESSAGE value="mini project" />
-    <MESSAGE value="learning svm" />
-    <MESSAGE value="repairing some codes in python3" />
-    <MESSAGE value="Decision Tree" />
-    <MESSAGE value="choose your own" />
-    <MESSAGE value="datasets" />
-    <MESSAGE value="explore enron data" />
-    <MESSAGE value="Regression" />
-    <option name="LAST_COMMIT_MESSAGE" value="Regression" />
-  </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <option name="time" value="4" />
-    </breakpoint-manager>
+    <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Choose your own algorithm/test.png" />
-    <entry file="file://$PROJECT_DIR$/Choose your own algorithm/Decision Treename.png" />
-    <entry file="file://$PROJECT_DIR$/Choose your own algorithm/Linear SVMname.png" />
-    <entry file="file://$PROJECT_DIR$/Choose your own algorithm/Naive Bayesname.png" />
-    <entry file="file://$PROJECT_DIR$/Choose your own algorithm/Random Forestname.png" />
-    <entry file="file://$PROJECT_DIR$/Choose your own algorithm/AdaBoostname.png" />
-    <entry file="file://$PROJECT_DIR$/Choose your own algorithm/Linear SVM.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Choose your own algorithm/Random Forest.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Choose your own algorithm/Nearest Neighbor.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Decision Trees/studentMain.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="33" column="48" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Choose your own algorithm/test_your_algotithm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="23" column="51" lean-forward="true" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Mini_Project/ud120-projects/tools/dos2unix.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Mini_Project/ud120-projects/final_project/poi_names.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Mini_Project/ud120-projects/datasets_questions/explore_enron_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="670">
-          <caret line="104" column="0" lean-forward="false" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Naive_bayes/class_vis.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1117">
-          <caret line="48" column="30" lean-forward="true" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Mini_Project/ud120-projects/choose_your_own/prep_terrain_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Mini_Project/ud120-projects/choose_your_own/your_algorithm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="514">
-          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Mini_Project/ud120-projects/choose_your_own/class_vis.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="607">
-          <caret line="46" column="27" lean-forward="true" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Regression/test.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Mini_Project/ud120-projects/regression/finance_regression.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="91" column="12" lean-forward="true" selection-start-line="91" selection-start-column="12" selection-end-line="91" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Regression/linear_model_example.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="3" column="21" lean-forward="false" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Mini_Project/ud120-projects/tools/convert_to_unix.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Regression/studentMain.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="20" column="24" lean-forward="false" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Regression/studentRegression.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="43" lean-forward="false" selection-start-line="0" selection-start-column="43" selection-end-line="0" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Regression/ages_net_worths.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Regression/regressionQuiz.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="26" column="28" lean-forward="true" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Choose your own algorithm/classifier_comparison.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1466">
-          <caret line="38" column="17" lean-forward="true" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Mini_Project/ud120-projects/tools/email_preprocess.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4">
-          <caret line="52" column="19" lean-forward="false" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Mini_Project/ud120-projects/final_project/poi_email_addresses.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="511">
-          <caret line="85" column="31" lean-forward="false" selection-start-line="85" selection-start-column="23" selection-end-line="85" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Mini_Project/ud120-projects/decision_tree/dt_author_id.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="36" column="33" lean-forward="false" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Mini_Project/ud120-projects/naive_bayes/nb_author_id.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="31" column="11" lean-forward="false" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Mini_Project/ud120-projects/svm/svm_author_id.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2017.2/system/python_stubs/-1260234785/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-20">
-          <caret line="512" column="7" lean-forward="true" selection-start-line="512" selection-start-column="7" selection-end-line="512" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Mini_Project/ud120-projects/outliers/enron_outliers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="23" column="28" lean-forward="false" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Mini_Project/ud120-projects/outliers/outlier_cleaner.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/sklearn/preprocessing/data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="368" column="0" lean-forward="false" selection-start-line="368" selection-start-column="0" selection-end-line="368" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Mini_Project/ud120-projects/tools/feature_format.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-236">
-          <caret line="104" column="4" lean-forward="false" selection-start-line="104" selection-start-column="4" selection-end-line="104" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Feature scale/MinMaxScaler_example.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="4" column="23" lean-forward="true" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+        <state relative-caret-position="138">
+          <caret line="6" column="22" lean-forward="true" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#46#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Mini_Project/ud120-projects/outliers/outlier_removal_regression.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/sklearn/utils/validation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="40" column="29" lean-forward="true" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Feature scale/featuter_scale_quiz.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Mini_Project/ud120-projects/k_means/k_means_cluster.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="111" column="0" lean-forward="true" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/string.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8156">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="330">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2017.2/system/python_stubs/-1260234785/pandas/_libs/parsers.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/sklearn/model_selection/_split.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="793" column="42" lean-forward="false" selection-start-line="793" selection-start-column="42" selection-end-line="793" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/nltk/stem/snowball.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="1213" column="37" lean-forward="true" selection-start-line="1213" selection-start-column="37" selection-end-line="1213" selection-end-column="37" />
+        <state relative-caret-position="200">
+          <caret line="2030" column="0" lean-forward="false" selection-start-line="2030" selection-start-column="0" selection-end-line="2030" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Mini_Project/ud120-projects/text_learning/from_sara.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2790">
-          <caret line="93" column="7" lean-forward="false" selection-start-line="93" selection-start-column="7" selection-end-line="93" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Mini_Project/ud120-projects/text_learning/from_chris.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="126" column="34" lean-forward="false" selection-start-line="126" selection-start-column="34" selection-end-line="126" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Mini_Project/ud120-projects/text_learning/test_email.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Text learning/Countvectorizer_example.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Mini_Project/ud120-projects/feature_selection/find_signature.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Text learning/remove_stop_words_NLK.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Mini_Project/ud120-projects/tools/parse_out_email_text.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="40" column="43" lean-forward="true" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
+          <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
           <folding>
-            <element signature="e#19#65#0" expanded="true" />
+            <element signature="e#19#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Mini_Project/ud120-projects/text_learning/vectorize_text.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="90" column="22" lean-forward="true" selection-start-line="90" selection-start-column="22" selection-end-line="90" selection-end-column="22" />
-          <folding>
-            <element signature="e#19#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

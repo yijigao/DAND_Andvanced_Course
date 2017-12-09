@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Machine Leaning.iml" filepath="$PROJECT_DIR$/.idea/Machine Leaning.iml" />
+      <module fileurl="file://D:/Mini_Project/ud120-projects/.idea/ud120-projects.iml" filepath="D:/Mini_Project/ud120-projects/.idea/ud120-projects.iml" />
     </modules>
   </component>
 </project>
