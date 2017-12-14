@@ -3,16 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="599f72e1-acaa-4cb7-b04f-f4ba1a56b634" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Choose your own algorithm/classifier_comparison.py" afterPath="$PROJECT_DIR$/Choose your own algorithm/classifier_comparison.py" />
-      <change beforePath="$PROJECT_DIR$/Choose your own algorithm/test_your_algotithm.py" afterPath="$PROJECT_DIR$/Choose your own algorithm/test_your_algotithm.py" />
       <change beforePath="D:/Mini_Project/ud120-projects/final_project/EnronSubmissionFreeResponseQuestions.md" afterPath="D:/Mini_Project/ud120-projects/final_project/EnronSubmissionFreeResponseQuestions.md" />
       <change beforePath="D:/Mini_Project/ud120-projects/final_project/poi_id.py" afterPath="D:/Mini_Project/ud120-projects/final_project/poi_id.py" />
-      <change beforePath="D:/Mini_Project/ud120-projects/final_project/tester.py" afterPath="D:/Mini_Project/ud120-projects/final_project/tester.py" />
-      <change beforePath="D:/Mini_Project/ud120-projects/outliers/enron_outliers.py" afterPath="D:/Mini_Project/ud120-projects/outliers/enron_outliers.py" />
-      <change beforePath="D:/Mini_Project/ud120-projects/outliers/outlier_cleaner.py" afterPath="D:/Mini_Project/ud120-projects/outliers/outlier_cleaner.py" />
-      <change beforePath="D:/Mini_Project/ud120-projects/outliers/outlier_removal_regression.py" afterPath="D:/Mini_Project/ud120-projects/outliers/outlier_removal_regression.py" />
-      <change beforePath="D:/Mini_Project/ud120-projects/pca/eigenfaces.py" afterPath="D:/Mini_Project/ud120-projects/pca/eigenfaces.py" />
-      <change beforePath="D:/Mini_Project/ud120-projects/tools/feature_format.py" afterPath="D:/Mini_Project/ud120-projects/tools/feature_format.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,7 +19,7 @@
     <SUITE FILE_PATH="coverage/Machine_Leaning$studentCode.coverage" NAME="studentCode Coverage Results" MODIFIED="1512980539658" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Cross_validation" />
     <SUITE FILE_PATH="coverage/Machine_Leaning$MinMaxScaler_example.coverage" NAME="MinMaxScaler_example Coverage Results" MODIFIED="1512819796366" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Feature scale" />
     <SUITE FILE_PATH="coverage/Machine_Leaning$Countvectorizer_example.coverage" NAME="Countvectorizer_example Coverage Results" MODIFIED="1512825172608" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Text learning" />
-    <SUITE FILE_PATH="coverage/Machine_Leaning$poi_id.coverage" NAME="poi_id Coverage Results" MODIFIED="1513166198906" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/Mini_Project/ud120-projects/final_project" />
+    <SUITE FILE_PATH="coverage/Machine_Leaning$poi_id.coverage" NAME="poi_id Coverage Results" MODIFIED="1513242343549" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/Mini_Project/ud120-projects/final_project" />
     <SUITE FILE_PATH="coverage/Machine_Leaning$find_signature.coverage" NAME="find_signature Coverage Results" MODIFIED="1512872519684" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/Mini_Project/ud120-projects/feature_selection" />
     <SUITE FILE_PATH="coverage/Machine_Leaning$validate_poi.coverage" NAME="validate_poi Coverage Results" MODIFIED="1512984058914" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/Mini_Project/ud120-projects/validation" />
     <SUITE FILE_PATH="coverage/Machine_Leaning$tester.coverage" NAME="tester Coverage Results" MODIFIED="1513165890450" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/Mini_Project/ud120-projects/final_project" />
@@ -37,8 +29,8 @@
       <file leaf-file-name="poi_id.py" pinned="false" current-in-tab="true">
         <entry file="file://D:/Mini_Project/ud120-projects/final_project/poi_id.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="66" column="41" lean-forward="true" selection-start-line="66" selection-start-column="41" selection-end-line="66" selection-end-column="41" />
+            <state relative-caret-position="510">
+              <caret line="74" column="0" lean-forward="true" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
               <folding>
                 <element signature="e#19#32#0" expanded="true" />
               </folding>
@@ -51,8 +43,10 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="420">
-                <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-                <folding />
+                <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+                <folding>
+                  <marker date="1513238370052" expanded="true" signature="721:768" ph="ordered list: 2. 你最终在你的POI标识符中使用了什么特...度量的解读" />
+                </folding>
               </first_editor>
               <second_editor />
             </state>
@@ -62,8 +56,8 @@
       <file leaf-file-name="tester.py" pinned="false" current-in-tab="false">
         <entry file="file://D:/Mini_Project/ud120-projects/final_project/tester.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1845">
-              <caret line="72" column="28" lean-forward="true" selection-start-line="72" selection-start-column="28" selection-end-line="72" selection-end-column="28" />
+            <state relative-caret-position="2070">
+              <caret line="72" column="28" lean-forward="false" selection-start-line="72" selection-start-column="28" selection-end-line="72" selection-end-column="28" />
               <folding>
                 <element signature="e#348#361#0" expanded="true" />
               </folding>
@@ -140,7 +134,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -196,6 +189,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -377,7 +371,14 @@
       <option name="project" value="LOCAL" />
       <updated>1513076400662</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="explore the test with features">
+      <created>1513166326870</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1513166326870</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -422,7 +423,8 @@
     <MESSAGE value="PCA" />
     <MESSAGE value="preparing for final project" />
     <MESSAGE value="Clean Data" />
-    <option name="LAST_COMMIT_MESSAGE" value="Clean Data" />
+    <MESSAGE value="explore the test with features" />
+    <option name="LAST_COMMIT_MESSAGE" value="explore the test with features" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -431,6 +433,19 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://D:/Mini_Project/ud120-projects/final_project/EnronSubmissionFreeResponseQuestions.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="420">
+            <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <folding>
+              <marker date="1513238370052" expanded="true" signature="721:768" ph="ordered list: 2. 你最终在你的POI标识符中使用了什么特...度量的解读" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://D:/Mini_Project/ud120-projects/final_project/poi_id.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1770">
@@ -480,7 +495,9 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="270">
             <caret line="9" column="8" lean-forward="false" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
-            <folding />
+            <folding>
+              <marker date="1513238370052" expanded="true" signature="721:768" ph="ordered list: 2. 你最终在你的POI标识符中使用了什么特...度量的解读" />
+            </folding>
           </first_editor>
           <second_editor />
         </state>
@@ -511,7 +528,9 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="330">
             <caret line="11" column="37" lean-forward="true" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
-            <folding />
+            <folding>
+              <marker date="1513238370052" expanded="true" signature="721:768" ph="ordered list: 2. 你最终在你的POI标识符中使用了什么特...度量的解读" />
+            </folding>
           </first_editor>
           <second_editor />
         </state>
@@ -720,7 +739,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="269">
           <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -728,9 +746,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <element signature="e#147#165#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -738,9 +753,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="25" column="41" lean-forward="true" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#10#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -748,9 +760,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="555">
           <caret line="23" column="20" lean-forward="true" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
-          <folding>
-            <element signature="e#19#32#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -758,7 +767,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-75">
           <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -766,9 +774,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
           <caret line="23" column="18" lean-forward="false" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
-          <folding>
-            <element signature="e#19#32#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -792,8 +797,10 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="420">
-            <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-            <folding />
+            <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <folding>
+              <marker date="1513238370052" expanded="true" signature="721:768" ph="ordered list: 2. 你最终在你的POI标识符中使用了什么特...度量的解读" />
+            </folding>
           </first_editor>
           <second_editor />
         </state>
@@ -801,8 +808,8 @@
     </entry>
     <entry file="file://D:/Mini_Project/ud120-projects/final_project/tester.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1845">
-          <caret line="72" column="28" lean-forward="true" selection-start-line="72" selection-start-column="28" selection-end-line="72" selection-end-column="28" />
+        <state relative-caret-position="2070">
+          <caret line="72" column="28" lean-forward="false" selection-start-line="72" selection-start-column="28" selection-end-line="72" selection-end-column="28" />
           <folding>
             <element signature="e#348#361#0" expanded="true" />
           </folding>
@@ -811,8 +818,8 @@
     </entry>
     <entry file="file://D:/Mini_Project/ud120-projects/final_project/poi_id.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="66" column="41" lean-forward="true" selection-start-line="66" selection-start-column="41" selection-end-line="66" selection-end-column="41" />
+        <state relative-caret-position="510">
+          <caret line="74" column="0" lean-forward="true" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
           <folding>
             <element signature="e#19#32#0" expanded="true" />
           </folding>
